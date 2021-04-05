@@ -9,7 +9,7 @@ a {
 }
 
 .bg-light-blue {
-    background: rgba(0, 82, 204, 0.05);
+    background: rgba(0, 82, 204, 0.03);
 }
 
 .bg-dark-blue {
@@ -46,12 +46,39 @@ a {
     box-shadow: 0 0 0 0rem #172b4d;
 }
 
+.start-left-panel {
+    position: relative;
+}
+
+.start-left-panel footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.get-started-left-panel {
+    position: relative;
+    background-image: url(../img/Vector.png);
+    height: 100vh;
+    background-color: rgba(0, 82, 204, 0.03);
+    opacity: 1;
+    
+}
+
+.get-started-left-panel footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .table-bg {
+    position: absolute;
     background-image: url(../img/table-bg.png);
     height: 226px;
+    width: 100%;
     mix-blend-mode: luminosity;
-    opacity: 0.2;
-    margin-top: 235px;
+    opacity: 0.5;
+    bottom: 72px;
 }
 
 .full-height {
@@ -59,7 +86,7 @@ a {
 }
 
 .bg-light-blue {
-    background: rgba(0, 82, 204, 0.05);
+    background: rgba(0, 82, 204, 0.03);
 }
 
 .bg-dark-blue {
@@ -110,3 +137,47 @@ a {
     margin-top: 200px;
     max-width: 400px;
 }
+
+.check-timeline .form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: .1em;
+    margin-right: .7rem;
+    border: 2px solid rgb(0 82 204);
+    
+}
+
+.check-timeline .form-check-label {
+    color: #0052CC;
+    opacity: 1;
+}
+
+.vertical-connect {
+    height: 25px;
+    border-left: 2px solid #0052CC;
+    width: 0;
+    margin-left: .5rem;
+    opacity: 1;
+}
+
+.right-details-panel {
+    padding: 30px 70px;
+}
+
+.hi-message-card {
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0;
+    border-radius: 1rem;
+}
+
+.hi-message-card .card-body {
+    border-radius: 1rem;
+}
+
