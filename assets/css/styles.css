@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-light-blue {
+    background: rgba(0, 82, 204, 0.05);
+}
+
+.bg-dark-blue {
+    background: #172B4D;
+}
+
+.primary-color {
+    background: #0052CC;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #172b4d1f;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #172b4d;
+    outline: 0;
+    box-shadow: 0 0 0 0rem #172b4d;
+}
+
+.table-bg {
+    background-image: url(../img/table-bg.png);
+    height: 226px;
+    mix-blend-mode: luminosity;
+    opacity: 0.2;
+    margin-top: 235px;
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+.bg-light-blue {
+    background: rgba(0, 82, 204, 0.05);
+}
+
+.bg-dark-blue {
+    background: #172B4D;
+}
+
+.welcome-back-text {
+    font-size: 48px;
+    margin-top: 200px;
+    max-width: 230px;
+}
+
+.welcome-login-text {
+    font-size: 48px;
+    max-width: 230px;
+}
+
+.few-click-away {
+    font-size: 48px;
+    margin-top: 200px;
+    max-width: 530px;
+}
+
+.login-area {
+    width: 500px;
+}
+
+.social-login img {
+    width: 25px;
+}
+
+.social-login .btn {
+    width: 60px;
+    height: 60px;
+    box-shadow: 0px 4px 10px rgb(0 0 0 / 5%);
+    border-radius: 50%;
+    line-height: 42px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.social-login .btn:hover {
+    background-color: #e4e4e4;
+}
+
+.few-click-two {
+    font-size: 48px;
+    margin-top: 200px;
+    max-width: 400px;
+}

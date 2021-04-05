@@ -1,0 +1,38 @@
+@media only screen and (max-width: 992px) {
+    .welcome-back-text {
+        font-size: 48px;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+    .table-bg {
+        background-image: url(../img/table-bg.png);
+        height: 226px;
+        mix-blend-mode: luminosity;
+        opacity: 0.2;
+        margin-top: 235px;
+        display: none;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: none;
+    }
+    .full-height {
+        min-height: 20vh;
+    }
+    .welcome-login-text {
+        font-size: 48px;
+        max-width: 230px;
+        margin-top: 50px;
+    }
+    .few-click-away {
+        font-size: 38px;
+        margin-top: 40px;
+        max-width: 100%;
+        text-align: center;
+    }
+    .all-people {
+        width: 100%;
+    }
+}
