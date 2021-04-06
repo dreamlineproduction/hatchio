@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
 body {
     font-family: 'Cabin', sans-serif;
+    background-color: #F2F6FC;
 }
 
 a {
@@ -16,8 +17,30 @@ a {
     background: #172B4D;
 }
 
+.get-started-bos-start .card {
+    width: 400px;
+    border: 2px solid #172b4d1f;
+    margin-bottom: 20px;
+    font-size: 19px;
+    opacity: .7;
+}
+
+.get-started-bos-start .active {
+    font-weight: 600;
+    opacity: 1;
+}
+
 .primary-color {
     background: #0052CC;
+}
+
+.form-check-input:checked {
+    background-color: #0052CC;
+    border-color: #0052CC;
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: url(../img/svg/check-solid.svg);
 }
 
 .form-control {
@@ -62,7 +85,6 @@ a {
     height: 100vh;
     background-color: rgba(0, 82, 204, 0.03);
     opacity: 1;
-    
 }
 
 .get-started-left-panel footer {
@@ -144,12 +166,13 @@ a {
     margin-top: .1em;
     margin-right: .7rem;
     border: 2px solid rgb(0 82 204);
-    
+    opacity: .7;
 }
 
 .check-timeline .form-check-label {
     color: #0052CC;
-    opacity: 1;
+    opacity: .7;
+    font-weight: 600;
 }
 
 .vertical-connect {
@@ -157,7 +180,11 @@ a {
     border-left: 2px solid #0052CC;
     width: 0;
     margin-left: .5rem;
-    opacity: 1;
+    opacity: .7;
+}
+
+.check-active {
+    opacity: 1 !important;
 }
 
 .right-details-panel {
@@ -181,3 +208,9 @@ a {
     border-radius: 1rem;
 }
 
+.verify-bg {
+    background-image: url(../img/svg/lines.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
