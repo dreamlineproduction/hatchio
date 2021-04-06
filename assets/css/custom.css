@@ -1,0 +1,41 @@
+.right-details-panel {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.main-services .btn-primary {
+    color: #a2a2a2;
+    background-color: #ffffff;
+    border-color: #a2a2a2;
+    border: 2px solid #a2a2a2;
+    padding: 1rem 3.2rem;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    font-size: x-large;
+}
+
+.main-services .btn-check:active+.btn-primary,
+.btn-check:checked+.btn-primary,
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle {
+    color: #0a58ca;
+    background-color: #ffffff;
+    border-color: #0a53be;
+}
+
+.main-services .btn-primary:focus {
+    box-shadow: none;
+}
+
+.design-n-creative .form-check-input {
+    width: 1.3em;
+    height: 1.3em;
+    margin-top: inherit;
+    margin-right: .5rem;
+}
+
+.edit-profile-picture {
+    width: 5rem;
+    height: 5rem;
+}
