@@ -36,6 +36,35 @@
 }
 
 .edit-profile-picture {
-    width: 5rem;
-    height: 5rem;
+    min-width: 8rem;
+    max-width: 8rem;
+    height: 8rem;
+    margin-right: 2rem;
+}
+
+.edit-profile-form .form-control,
+.experience .form-control,
+.education .form-control {
+    padding: .75rem .75rem;
+}
+
+.hourly-rate .input-group-text {
+    padding: .75rem 1.5rem;
+    color: #a2a7ac;
+    background-color: #ffffff;
+    border: 2px solid #ced4da;
+    border-radius: .5rem;
+    z-index: 15;
+}
+
+.hourly-rate .form-control {
+    border: 2px solid #ced4da;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn-light-blue {
+    color: #0052cc;
+    background-color: #d5e4f3;
+    border-color: #f8f9fa;
 }
