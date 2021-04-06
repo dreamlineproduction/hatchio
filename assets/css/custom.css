@@ -68,3 +68,80 @@
     background-color: #d5e4f3;
     border-color: #f8f9fa;
 }
+
+.portfolio-container {
+    position: relative;
+}
+
+
+.portfolio-sample {
+    border-radius: 10px;
+    
+}
+
+.portfolio-label {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    opacity: .9;
+    background-color: white;
+    
+}
+
+.portfolio-label h6 {
+    margin: 20px 0 0 20px;
+}
+
+.add-to-portfolio {
+    min-height: 250px;
+    border-radius: 15px;
+    border: 2px dashed #0052cc8e;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-to-portfolio .fa {
+    font-size: xx-large;
+    color: #0052cc8e;
+}
+
+.upload-work-modal .modal-header {
+    padding: 3rem 3rem;
+}
+
+.upload-work-modal .modal-body {
+    padding: 0 3rem 1rem 3rem;
+}
+
+.upload-drop-area {
+    height: 800px;
+    border: 2px dashed rgb(221, 221, 221);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.upload-image-preview {
+    height: 250px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.upload-desc-area {
+    position: relative;
+}
+
+
+.upload-desc-area ul {
+    padding-left: 1.2rem;
+}
+
+.upload-desc-area .form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0;
+    margin-right: .5rem;
+}
+
