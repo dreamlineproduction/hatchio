@@ -188,3 +188,20 @@
 .price-table tbody>tr:last-child {
     border-bottom: 2px solid #172b4d1c !important;
 }
+
+.switch-plan h6 {
+    display: inline-flex;
+}
+
+.switch-plan .form-check {
+    display: inline-flex;
+    min-height: 1.5rem;
+    padding-left: inherit;
+    margin-bottom: inherit;
+}
+
+.switch-plan .form-switch .form-check-input {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 2px solid #172B4D;
+}
