@@ -214,12 +214,11 @@
     margin-left: 1rem;
 }
 
-
-
 .community-social a,
 .community-message a {
     margin-right: 1.5rem;
 }
+
 .community-social a {
     margin-right: 1.5rem;
 }
@@ -244,12 +243,10 @@
 
 .all-se-message {
     margin-left: 4rem;
-    
 }
 
 .community-message {
     margin-left: 3.5rem;
-    
 }
 
 .feed-body .card-body {
@@ -257,7 +254,7 @@
 }
 
 .shadow-cust {
-    box-shadow: 0 .05rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 .05rem 1rem rgba(0, 0, 0, .15)!important;
 }
 
 .btn-light-blue {
@@ -265,10 +262,12 @@
     background-color: #f8f9fa47;
     border: 0;
 }
+
 .btn-light-blue:hover {
     color: #000000;
     background-color: #ffffff;
-   
 }
 
-
+.news-feed-button {
+    margin-bottom: 1.5rem;
+}
