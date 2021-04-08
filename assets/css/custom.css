@@ -36,6 +36,239 @@
 }
 
 .edit-profile-picture {
-    width: 5rem;
-    height: 5rem;
+    min-width: 8rem;
+    max-width: 8rem;
+    height: 8rem;
+    margin-right: 2rem;
 }
+
+.edit-profile-form .form-control,
+.experience .form-control,
+.education .form-control {
+    padding: .75rem .75rem;
+}
+
+.hourly-rate .input-group-text {
+    padding: .75rem 1.5rem;
+    color: #a2a7ac;
+    background-color: #ffffff;
+    border: 2px solid #ced4da;
+    border-radius: .5rem;
+    z-index: 15;
+}
+
+.hourly-rate .form-control {
+    border: 2px solid #ced4da;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn-light-blue {
+    color: #0052cc;
+    background-color: #d5e4f3;
+    border-color: #f8f9fa;
+}
+
+.portfolio-container {
+    position: relative;
+}
+
+.portfolio-sample {
+    border-radius: 10px;
+}
+
+.portfolio-label {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    opacity: .9;
+    background-color: white;
+}
+
+.portfolio-label h6 {
+    margin: 20px 0 0 20px;
+}
+
+.add-to-portfolio {
+    min-height: 250px;
+    border-radius: 15px;
+    border: 2px dashed #0052cc8e;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-to-portfolio .fa {
+    font-size: xx-large;
+    color: #0052cc8e;
+}
+
+.upload-work-modal .modal-header {
+    padding: 2rem 2rem;
+}
+
+.upload-work-modal .modal-body {
+    padding: 0 3rem 1rem 3rem;
+}
+
+.upload-drop-area {
+    height: 800px;
+    border: 2px dashed rgb(221, 221, 221);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.upload-image-preview {
+    height: 250px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.upload-desc-area {
+    position: relative;
+}
+
+.upload-desc-area ul {
+    padding-left: 1.2rem;
+}
+
+.upload-desc-area .form-check-input {
+    width: 1.2em;
+    height: 1.2em;
+    margin-top: 0;
+    margin-right: .5rem;
+}
+
+.text-blue {
+    color: #0052cc;
+}
+
+.price-table thead tr th {
+    padding-left: 25px;
+    border-right: 2px solid #172b4d1c;
+}
+
+.price-table thead {
+    border: 2px solid #172b4d1c;
+}
+
+.price-table tbody th {
+    padding-left: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #172B4D;
+    border-bottom-width: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.price-table tbody tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+    border-right: 2px solid #172b4d1c;
+    border-left: 2px solid #172b4d1c;
+    border-bottom: 0px solid #172b4d1c;
+    border-top: 0px solid #172b4d1c;
+    border-bottom-width: 0px !important;
+}
+
+.price-table tbody td {
+    padding: .5rem .5rem;
+    background-color: var(--bs-table-bg);
+    border-bottom: 0px solid #172b4d1c !important;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    border-left: 2px solid #172b4d1c;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.price-table tbody>tr:last-child {
+    border-bottom: 2px solid #172b4d1c !important;
+}
+
+.switch-plan h6 {
+    display: inline-flex;
+}
+
+.switch-plan .form-check {
+    display: inline-flex;
+    min-height: 1.5rem;
+    padding-left: inherit;
+    margin-bottom: inherit;
+}
+
+.switch-plan .form-switch .form-check-input {
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 2px solid #172B4D;
+}
+
+.process {
+    padding: 1rem;
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+
+
+.community-social a,
+.community-message a {
+    margin-right: 1.5rem;
+}
+.community-social a {
+    margin-right: 1.5rem;
+}
+
+.bg-dark-blue {
+    background-color: #172B4D;
+}
+
+.navbar i {
+    margin-right: .5rem;
+}
+
+.navbar .nav-item {
+    margin-right: 1.5rem;
+}
+
+.feed-body .card-header {
+    background-color: #80aae92d;
+    border: 0;
+    padding: 2rem;
+}
+
+.all-se-message {
+    margin-left: 4rem;
+    
+}
+
+.community-message {
+    margin-left: 3.5rem;
+    
+}
+
+.feed-body .card-body {
+    padding: 2rem;
+}
+
+.shadow-cust {
+    box-shadow: 0 .05rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.btn-light-blue {
+    color: #ffffffbd;
+    background-color: #f8f9fa47;
+    border: 0;
+}
+.btn-light-blue:hover {
+    color: #000000;
+    background-color: #ffffff;
+   
+}
+
+

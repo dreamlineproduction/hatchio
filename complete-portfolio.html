@@ -135,138 +135,47 @@
                 </div>
 
                 <div class="mt-5">
-                    <h1>Profile</h1>
-                    <p class="text-muted mt-3">Set up your Hatchio presence and hiring needs.</p>
+                    <h1>Portfolio</h1>
+                    <h6 class="text-muted mt-3">Add some interesting projects to showcase as casestudy.</h6>
                 </div>
 
 
-                <div class="edit-profile py-5 d-flex align-items-center border-bottom">
-                    <div class="edit-profile-picture rounded-circle bg-light">
+                <div class="row mt-5">
+                    <div class="col-md-4 add-to-portfolio" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <i class="fa fa-plus mx-auto" aria-hidden="true"></i>
                     </div>
+                    <div class="col-md-4">
+                        <div class="portfolio-container">
+                            <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
 
-                    <div class="profile-pic-details">
-                        <h4>Edit Profile Picture</h4>
-                        <p class="text-muted mb-4">Max.of 2mb. Recommended size: 280px 280px</p>
-
-                        <a href="#">
-                            <h6>Upload new picture</h6>
-                        </a>
+                            <div class="portfolio-label">
+                                <h6 class="">Apple Web Design</h6>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
 
-
-                <div class="edit-profile-form py-5 border-bottom">
+                <div class="edit-profile-form py-5 ">
+                    <h3 class="mb-4">Personal Website</h3>
                     <form>
                         <div class="mb-3">
-                            <label for="title" class="form-label text-muted"><h6>Title</h6></label>
-                            <input class="form-control" type="text" placeholder="Ex. Product Designer" aria-label="default input example">
+                            <label for="url" class="form-label text-muted"><h6>Website URL</h6></label>
+                            <input class="form-control" type="text" placeholder="http://creorb.com" aria-label="default input example">
                         </div>
-                        <div class="mb-3">
-                            <label for="title" class="form-label text-muted"><h6>Bio</h6></label>
-                            <textarea class="form-control" id="bio" rows="3"></textarea>
-                        </div>
+
                     </form>
 
                 </div>
 
 
-                <div class="hourly-rate py-5 border-bottom">
-                    <h3 class="mb-4">Hourly Rate</h3>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h6 class="text-muted">Your Hourly Rate</h6>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text border-end-0 text-dark">$</span>
-                                <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">/hr</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <h6 class="text-muted">Hatchio Service Fee/ 5%</h6>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text border-end-0 text-dark">$</span>
-                                <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">/hr</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <h6 class="">You’ll Receive</h6>
-                            <div class="input-group mb-3">
-                                <span class="input-group-text border-end-0 text-dark">$</span>
-                                <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-                                <span class="input-group-text">/hr</span>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="experience border-bottom py-5">
-                    <h3 class="mb-4">Experience</h3>
-
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Title</h6>
-                            <input type="text" class="form-control" placeholder="Ex. Product Designer" aria-label="City">
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Company</h6>
-                            <input type="text" class="form-control" placeholder="Ex. Creorb Studio" aria-label="State">
-                        </div>
-
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Years of Experience</h6>
-                            <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-
-                                <span class="input-group-text">0.00</span>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Summary</h6>
-                            <input type="text" class="form-control" placeholder="Ex. Describe your Work Experience" aria-label="State">
-                        </div>
-
-                    </div>
-                    <button type="submit" class="btn btn-light-blue mt-4 py-2 px-5">Add Experience</button>
-
-                </div>
-
-
-                <div class="education py-5">
-                    <h3 class="mb-4">Education</h3>
-
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Institution Name</h6>
-                            <input type="text" class="form-control" placeholder="Ex. Christ University" aria-label="City">
-                        </div>
-
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Years of Experience</h6>
-                            <div class="input-group">
-                                <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
-
-                                <span class="input-group-text">0.00</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Degree</h6>
-                            <input type="text" class="form-control" placeholder="Ex. MBA" aria-label="State">
-                        </div>
 
 
 
-                        <div class="col-sm-6">
-                            <h6 class="text-muted">Country</h6>
-                            <input type="text" class="form-control" placeholder="Ex. London" aria-label="State">
-                        </div>
 
-                    </div>
-                </div>
+
+
+
 
 
 
@@ -279,6 +188,69 @@
 
             </div>
 
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Upload portfolio Modal -->
+    <div class="modal upload-work-modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title" id="staticBackdropLabel">Your Portfolio Work.</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="upload-drop-area">
+                                <div class="upload-info text-muted mx-auto">
+                                    <h6 class="">Darg file or upload a file</h6>
+                                    <p>PNG, GIF or JPG (RGB)</p>
+                                    <p>Maximum file size of 8mb</p>
+                                    <p>Minimum dimensions of 960px by 960px</p>
+                                    <p>Maximum dimensions of 2,040px by 20,400px</p>
+                                    <p>Check out how to use the cropping tool.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 upload-desc-area">
+                            <h6 class="text-muted">Preview</h6>
+                            <div class="upload-image-preview"></div>
+                            <form action="">
+                                <div class="my-4 ">
+                                    <h6 class="text-muted">Description</h6>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Ex. Discribe about this project .." rows="3"></textarea>
+                                </div>
+
+                                <h4>Requirements</h4>
+                                <ul>
+                                    <li>I agree to the code of conduct.</li>
+                                    <li>I understand the Copyright issue.</li>
+                                </ul>
+
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <h6 class="text-muted">
+                                        I understand and agree to the requirements.
+                                    </h6>
+                                </div>
+                                <div class="d-grid position-absolute bottom-0">
+                                    <button class="btn btn-primary primary-color py-3 px-5" type="button">Upload</button>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
