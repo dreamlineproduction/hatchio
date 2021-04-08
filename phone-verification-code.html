@@ -22,7 +22,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="node_modules/intl-tel-input/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css">
     <script src="node_modules/intl-tel-input/build/js/intlTelInput.min.js"></script>
+
 </head>
 
 <body style="border-style: none;" class="verify-bg">
@@ -43,8 +45,17 @@
                             <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" value="6">
                             <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" value="4">
                         </form>
-                        <div class="text-center mt-4">
-                            <small class="text-muted"><a href="#">Resend Code</a></small>
+                        <div class="mb-3 mt-3">
+
+                            <button type="submit" class="btn btn-primary primary-color w-100 p-3">Verify</button>
+
+
+
+
+
+                        </div>
+                        <div class="text-left mt-4">
+                            <small class="text-muted">Questions? Contact us at <a href="mailto:help@hatchio.com">help@hatchio.com</a></small>
                         </div>
 
 
@@ -55,8 +66,8 @@
     </div>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
@@ -64,32 +75,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
     <script src="assets/js/app.js"></script>
 
-    <script>
-        $('.digit-group').find('input').each(function() {
-            $(this).attr('maxlength', 1);
-            $(this).on('keyup', function(e) {
-                var parent = $($(this).parent());
 
-                if (e.keyCode === 8 || e.keyCode === 37) {
-                    var prev = parent.find('input#' + $(this).data('previous'));
-
-                    if (prev.length) {
-                        $(prev).select();
-                    }
-                } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
-                    var next = parent.find('input#' + $(this).data('next'));
-
-                    if (next.length) {
-                        $(next).select();
-                    } else {
-                        if (parent.data('autosubmit')) {
-                            parent.submit();
-                        }
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
