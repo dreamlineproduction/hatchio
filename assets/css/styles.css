@@ -213,4 +213,22 @@ a {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    background-color: #F2F6FC;
+}
+
+.iti {
+    width: 100%;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type=text],
+.iti--allow-dropdown input[type=tel],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type=text],
+.iti--separate-dial-code input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

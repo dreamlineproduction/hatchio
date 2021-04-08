@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Phone number verification- Hatchio</title>
+    <title>Enter verification code- Hatchio</title>
     <meta name="description" content="Free themes for students, teachers, and public use in learning purpose. Made with Bootstrap 5.">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
@@ -32,45 +32,63 @@
                 <div class="card p-5 border-0">
                     <div class="card-body">
                         <a href="index.html"> <img src="assets/img/logo.png"></a>
-                        <h1 class="mt-5">Enter your Phone Number
+                        <h1 class="mt-5">Verify Phone Number
                         </h1>
-                        <p class="w-75 mt-4">Hi, Creative Kaif! Enter your Phone number below to verify your account and we keep you secure.</p>
+                        <p class="w-75 mt-4">Hi, Creative Kaif! Enter your 6 digits Verification number below to verify your account and we keep you secure.</p>
 
-
-                        <form action="phone-verification-code.html">
-
-                            <div class="mb-3">
-
-                                <input type="tel" id="phone" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-
-                                <button type="submit" class="btn btn-primary primary-color w-100 p-3">Verify</button>
-
-
+                        <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
                         </form>
                         <div class="text-center mt-4">
                             <small class="text-muted"><a href="#">Resend Code</a></small>
                         </div>
 
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
-        <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
-        <script src="assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+    <script src="assets/js/app.js"></script>
 
+    <script>
+        $('.digit-group').find('input').each(function() {
+            $(this).attr('maxlength', 1);
+            $(this).on('keyup', function(e) {
+                var parent = $($(this).parent());
 
+                if (e.keyCode === 8 || e.keyCode === 37) {
+                    var prev = parent.find('input#' + $(this).data('previous'));
+
+                    if (prev.length) {
+                        $(prev).select();
+                    }
+                } else if ((e.keyCode >= 48 && e.keyCode <= 57) || (e.keyCode >= 65 && e.keyCode <= 90) || (e.keyCode >= 96 && e.keyCode <= 105) || e.keyCode === 39) {
+                    var next = parent.find('input#' + $(this).data('next'));
+
+                    if (next.length) {
+                        $(next).select();
+                    } else {
+                        if (parent.data('autosubmit')) {
+                            parent.submit();
+                        }
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
