@@ -271,3 +271,84 @@
 .news-feed-button {
     margin-bottom: 1.5rem;
 }
+
+.small-avatar-image {
+    max-width: 45px;
+    min-width: 45px;
+    height: 45px;
+}
+
+.rated-design {
+    background-image: url(../img/design-1.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.btn-light-trans {
+    color: #5c5e83;
+    background-color: #f8f9fa47;
+    border: 2px solid #e3e5e9;
+}
+
+
+
+.design-serial-no {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background-color: #172b4dd2;
+    border-radius: 3px;
+    padding: .3rem .5rem;
+    display: inline;
+    color: white;
+    margin-bottom: 0;
+}
+
+.rating-star i {
+    color: #F8B128;
+}
+
+.win-card {
+    background-image: url(../img/prize.png);
+    background-color: #ffffff; /* Used if the image is unavailable */
+    /* height: 300px; You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: auto; /* Resize the background image to cover the entire container */
+    border-radius: 10px;
+    position: relative;
+}
+
+.wining-design {
+    background-image: url(../img/portfolio1.jpg);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 200px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    border-radius: 10px;
+    position: relative;
+}
+
+.wining-design i {
+    position: absolute;
+    padding: 15px;
+    color: white;
+    background-color: #F8B128;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px;
+}
+
+.required-skill .badge {
+    padding: 10px 13px;
+    background-color: #172b4d1f !important;
+    margin-right: .5rem;
+    color: #2a3952c7;
+}
