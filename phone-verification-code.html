@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=a436bee1e5ae414f98db7ca13adfd7c0">
     <link rel="stylesheet" href="assets/css/styles.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
+    <link rel="stylesheet" href="assets/css/typeface.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/responsive.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -28,7 +29,7 @@
     <div class="container-fluid">
         <div class="row">
 
-            <div class="col-md-12 mx-auto full-height d-flex justify-content-center align-items-center">
+            <div class="col-md-4 mx-auto full-height d-flex justify-content-center align-items-center">
                 <div class="card p-5 border-0">
                     <div class="card-body">
                         <a href="index.html"> <img src="assets/img/logo.png"></a>
@@ -37,10 +38,10 @@
                         <p class="w-75 mt-4">Hi, Creative Kaif! Enter your 6 digits Verification number below to verify your account and we keep you secure.</p>
 
                         <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
-                            <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
-                            <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
-                            <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
-                            <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                            <input type="text" class="form-control" id="digit-1" name="digit-1" data-next="digit-2" value="0">
+                            <input type="text" class="form-control" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" value="9">
+                            <input type="text" class="form-control" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" value="6">
+                            <input type="text" class="form-control" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" value="4">
                         </form>
                         <div class="text-center mt-4">
                             <small class="text-muted"><a href="#">Resend Code</a></small>
