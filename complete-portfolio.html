@@ -210,12 +210,42 @@
                         <div class="col-md-8">
                             <div class="upload-drop-area">
                                 <div class="upload-info text-muted mx-auto">
-                                    <h6 class="">Darg file or upload a file</h6>
+                                    <!-- <h6 class="">Darg file or upload a file</h6>
                                     <p>PNG, GIF or JPG (RGB)</p>
                                     <p>Maximum file size of 8mb</p>
                                     <p>Minimum dimensions of 960px by 960px</p>
                                     <p>Maximum dimensions of 2,040px by 20,400px</p>
-                                    <p>Check out how to use the cropping tool.</p>
+                                    <p>Check out how to use the cropping tool.</p> -->
+
+                                    <main class="page">
+                                        <h2>Upload ,Crop and save.</h2>
+                                        <!-- input file -->
+                                        <div class="box">
+                                            <input type="file" id="file-input">
+                                        </div>
+                                        <!-- leftbox -->
+                                        <div class="box-2">
+                                            <div class="result"></div>
+                                        </div>
+                                        <!--rightbox-->
+                                        <div class="box-2 img-result hide">
+                                            <!-- result of crop -->
+                                            <img class="cropped" src="" alt="">
+                                        </div>
+                                        <!-- input file -->
+                                        <div class="box">
+                                            <div class="options hide">
+                                                <label> Width</label>
+                                                <input type="number" class="img-w" value="300" min="100" max="1200" />
+                                            </div>
+                                            <!-- save btn -->
+                                            <button class="btn save hide">Save</button>
+                                            <!-- download btn -->
+                                            <a href="" class="btn download hide">Download</a>
+                                        </div>
+                                    </main>
+
+
                                 </div>
 
                             </div>
