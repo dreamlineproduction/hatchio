@@ -108,6 +108,34 @@ a {
     min-height: 100vh;
 }
 
+.vertical-line-logo {
+    border: .5px solid #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 140px;
+    opacity: .3;
+}
+
+.vertical-line-plus {
+    border: .5px solid #fff;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 300px;
+    opacity: .3;
+}
+
+.user-dropdown .dropdown-menu {
+    left: -115px;
+    margin-top: 15px;
+}
+
+.create-new-button-plus {
+    width: 35px;
+    height: 35px;
+}
+
 .bg-light-blue {
     background: rgba(0, 82, 204, 0.03);
 }

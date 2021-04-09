@@ -33,6 +33,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+            <div class="vertical-line-logo"></div>
             <div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                     <li class="nav-item">
@@ -56,16 +57,35 @@
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
                     </li>
                 </ul>
-                <div class="d-flex">
+                <div class="d-flex align-items-center">
                     <a class="text-white mx-3" href=""><i class="fas fa-crown"></i></a>
                     <a class="text-white mx-3" href=""><i class="fas fa-search"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-comment"></i></a>
+                    <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"><span class="visually-hidden">unread messages</span></span>
+                    </a>
                     <a class="text-white mx-3" href=""><i class="fas fa-bell"></i></a>
-                    <button type="button" class="btn btn-primary btn-sm mx-3"><i class="fas fa-plus m-0"></i></button>
+
+                    <button type="button" class="btn btn-primary btn-sm mx-3 create-new-button-plus"><i class="fas fa-plus m-0"></i></button>
+                    <div class="user-info-top text-white ms-4 text-end">
+                        <h6 class="mb-0">Jessica J.</h6>
+                        <small class="text-muted">$8000.00 USD</small>
 
 
+                    </div>
+                    <div class="dropdown user-dropdown">
+
+                        <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust ms-3 dropdown-toggle" alt="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="vertical-line-plus"></div>
                 </div>
+
             </div>
+        </div>
         </div>
     </nav>
 
@@ -93,7 +113,7 @@
             <div class="row">
                 <div class="col-md-8">
 
-                    
+
 
 
 
@@ -105,10 +125,10 @@
                                 <div class="d-flex float-start">
                                     <img src="assets/img/Uber-Logo.jpg" class="small-avatar-image rounded shadow-cust" alt="">
                                     <div class="">
-                                    <h6 class="mx-3 mb-0"><strong><a href="">Uber</a></strong> rated your entry <strong> <a href=""> Design a Creative UI</a></strong></h6>
-                                    <small class="text-muted mx-3">24 min ago</small>
+                                        <h6 class="mx-3 mb-0"><strong><a href="">Uber</a></strong> rated your entry <strong> <a href=""> Design a Creative UI</a></strong></h6>
+                                        <small class="text-muted mx-3">24 min ago</small>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="float-end">
                                     <a href="#"> <i class="fas fa-arrow-right"></i> </a>
@@ -119,9 +139,9 @@
                             <div class="row mt-4">
                                 <div class="col-md-3">
                                     <div class="rated-design">
-                                            
-                                                   <p class="design-serial-no">#44</p> 
-                                            
+
+                                        <p class="design-serial-no">#44</p>
+
                                     </div>
                                     <div class="rating-star mt-2">
                                         <i class="fas fa-star"></i>
@@ -133,9 +153,9 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="rated-design">
-                                            
-                                                   <p class="design-serial-no">#32</p> 
-                                            
+
+                                        <p class="design-serial-no">#32</p>
+
                                     </div>
                                     <div class="rating-star mt-2">
                                         <i class="fas fa-star"></i>
@@ -146,22 +166,22 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
                     </div>
 
 
 
                     <div class="card border-0 shadow-cust my-3">
-                            <div class="card-body ">
+                        <div class="card-body ">
                             <div class="clearfix">
                                 <div class="d-flex float-start">
                                     <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
                                     <div class="">
-                                    <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has seleted you as winner.</h6>
-                                    <small class="text-muted mx-3">5 days ago</small>
+                                        <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has seleted you as winner.</h6>
+                                        <small class="text-muted mx-3">5 days ago</small>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="float-end">
                                     <a href="#"> <i class="fas fa-arrow-right"></i> </a>
@@ -171,56 +191,56 @@
                             <hr class="my-4" style="opacity: .1;">
 
                             <div class="win-card">
-                            <div class="row mt-4">
-                                <div class="col-md-7">
-                                   <h5>High Level Application Designer</h5>
-                                   <p class="text-muted">Complete the contest handover to receive your prize</p>
-                                   <h6 class="text-muted mt-5">Winning Prize</h6>
-                                   <h2>1,700 <span class="text-muted">USD</span></h2>
-                                   <button type="button" class="btn btn-primary primary-color mt-3">Complete Handover</button>
-                                </div>
-
-
-                                <div class="col-md-5">
-                                   <div class="wining-design">
-                                    <i class="fas fa-trophy"></i>
-                                   </div>
-
-                                   <div class="clearfix">
-
-                                    <div class="float-start mt-2">
-                                        <p>Entry #122</p>
+                                <div class="row mt-4">
+                                    <div class="col-md-7">
+                                        <h5>High Level Application Designer</h5>
+                                        <p class="text-muted">Complete the contest handover to receive your prize</p>
+                                        <h6 class="text-muted mt-5">Winning Prize</h6>
+                                        <h2>1,700 <span class="text-muted">USD</span></h2>
+                                        <button type="button" class="btn btn-primary primary-color mt-3">Complete Handover</button>
                                     </div>
 
-                                   <div class="rating-star mt-2 float-end">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
+
+                                    <div class="col-md-5">
+                                        <div class="wining-design">
+                                            <i class="fas fa-trophy"></i>
+                                        </div>
+
+                                        <div class="clearfix">
+
+                                            <div class="float-start mt-2">
+                                                <p>Entry #122</p>
+                                            </div>
+
+                                            <div class="rating-star mt-2 float-end">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
                                 </div>
-
-
-
                             </div>
-                                </div>
-                            </div>
-                           </div>
                         </div>
                     </div>
 
 
 
                     <div class="card border-0 shadow-cust mt-3">
-                         <div class="card-body ">
+                        <div class="card-body ">
                             <div class="clearfix">
                                 <div class="d-flex float-start">
                                     <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust" alt="">
                                     <div class="">
-                                    <h6 class="mx-3 mb-0"><strong><a href="">Robert G.</a></strong> has provided feedback for Great Content Landing page design</h6>
-                                    <small class="text-muted mx-3">5 days ago</small>
+                                        <h6 class="mx-3 mb-0"><strong><a href="">Robert G.</a></strong> has provided feedback for Great Content Landing page design</h6>
+                                        <small class="text-muted mx-3">5 days ago</small>
 
-                                </div>
+                                    </div>
                                 </div>
                                 <div class="float-end">
                                     <a href="#"> <i class="fas fa-arrow-right"></i> </a>
@@ -228,7 +248,9 @@
                             </div>
 
                             <div class="mt-5">
-                                <a href=""><h5><u>Great Content Landing page design</u></h5></a>
+                                <a href="">
+                                    <h5><u>Great Content Landing page design</u></h5>
+                                </a>
 
                                 <h4 class="text-muted mt-3">“Syed is creative, brilliant, and works hard to achieve a fantastic end result.”</h4>
 
@@ -242,60 +264,62 @@
                                 </div>
                             </div>
 
-                        
+
                         </div>
                     </div>
 
 
                     <div class="card border-0 shadow-cust my-3">
                         <div class="card-body ">
-                        <div class="clearfix">
-                            <div class="d-flex float-start">
-                                <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
-                                <div class="">
-                                <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has hired your for project.</h6>
-                                <small class="text-muted mx-3">5 days ago</small>
+                            <div class="clearfix">
+                                <div class="d-flex float-start">
+                                    <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
+                                    <div class="">
+                                        <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has hired your for project.</h6>
+                                        <small class="text-muted mx-3">5 days ago</small>
 
-                            </div>
-                            </div>
-                            <div class="float-end">
-                                <a href="#"> <i class="fas fa-arrow-right"></i> </a>
-                            </div>
-                        </div>
-
-                        <hr class="my-4" style="opacity: .1;">
-
-                        <div class="mt-4">
-                            <a href=""><h5>Design new Freelance Platform Hatchio.com</h5></a>
-
-                            <h6 class="text-muted">Click the Accept button below to start working. And discuss the project before accepting.</h6>
-
-                            <div class="d-flex my-4">
-                                <div class="">
-                                    <h6 class="text-muted">Budget</h6>
-                                    <h4>$1,700 <span class="text-muted"> USD</span></h4>
+                                    </div>
                                 </div>
-                                <div class="mx-5">
-                                    <h6 class="text-muted">Accept Before</h6>
-                                    <h4 class="text-danger">1 day 2h</h4>
+                                <div class="float-end">
+                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
                                 </div>
                             </div>
 
-                            <div class="required-skill">
-                                <h6 class="text-muted">Required Skills</h6>
-                                <span class="badge bg-secondary">HTML</span>
-                                <span class="badge bg-secondary">GRAPHIC DESIGN</span>
-                                <span class="badge bg-secondary">ILLUSTRATOR</span>
-                                <span class="badge bg-secondary">USER EXPERIENCE</span>
+                            <hr class="my-4" style="opacity: .1;">
 
-                                 </div>
+                            <div class="mt-4">
+                                <a href="">
+                                    <h5>Design new Freelance Platform Hatchio.com</h5>
+                                </a>
 
-                                 <button type="button" class="btn btn-success mt-4 py-2 px-4">Accept Project</button>
-                                 <button type="button" class="btn btn-light-trans mx-3 mt-4 py-2 px-4">Chat</button>
+                                <h6 class="text-muted">Click the Accept button below to start working. And discuss the project before accepting.</h6>
+
+                                <div class="d-flex my-4">
+                                    <div class="">
+                                        <h6 class="text-muted">Budget</h6>
+                                        <h4>$1,700 <span class="text-muted"> USD</span></h4>
+                                    </div>
+                                    <div class="mx-5">
+                                        <h6 class="text-muted">Accept Before</h6>
+                                        <h4 class="text-danger">1 day 2h</h4>
+                                    </div>
+                                </div>
+
+                                <div class="required-skill">
+                                    <h6 class="text-muted">Required Skills</h6>
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                    <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                    <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                </div>
+
+                                <button type="button" class="btn btn-success mt-4 py-2 px-4">Accept Project</button>
+                                <button type="button" class="btn btn-light-trans mx-3 mt-4 py-2 px-4">Chat</button>
+                            </div>
+
                         </div>
-                        
                     </div>
-                </div>
 
 
 
@@ -341,7 +365,7 @@
 
                             <div class="clearfix">
                                 <div class="float-start">
-                                    <p class="text-muted mb-2">Leaderboard<i class="fas fa-info-circle mx-2"></i></p>
+                                    <p class="text-muted mb-2">Leaderboard<i class="fas fa-info-circle mx-2" data-toggle="tooltip" data-placement="top" title="Your Ranking"></i></p>
                                     <h4 class="mb-0"><span class="text-muted">R</span> 0</h4>
                                 </div>
 
@@ -450,7 +474,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
-
+    <script>
+        var tooltipTriggerList = [].slice.call(
+            document.querySelectorAll('[data-toggle="tooltip"]')
+        );
+        var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
 </body>
 
 </html>
