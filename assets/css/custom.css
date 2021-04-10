@@ -402,3 +402,23 @@
 .bg-pro {
     background-color: #172B4D;
 }
+
+.btn-light-cust {
+    color: #000;
+    background-color: #ececec !important;
+    border-color: #ececec !important;
+    border-radius: 50%;
+}
+
+.mt-cust {
+    margin-top: 5rem;
+}
+
+.vertical-line-gray {
+    border: .5px solid rgb(204, 204, 204);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 280px;
+    opacity: .3;
+}
