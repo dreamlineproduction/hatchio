@@ -316,6 +316,10 @@
     color: #F8B128;
 }
 
+.color-yellow {
+    color: #F8B128;
+}
+
 .win-card {
     background-image: url(../img/prize.png);
     background-color: #ffffff;
@@ -423,6 +427,103 @@
     opacity: .3;
 }
 
-.create-project-cover {
+
+.user-cover-photo {
+    background-image: url(../img/user-cover.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
     height: 300px;
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+}
+
+.profile-top-sec {
+    background-color: #ffffff;
+    border-radius: 5px;
+    
+}
+
+.big-user-image {
+    background-image: url(../img/big-user.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 300px;
+    
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.online-sign {
+    padding: 5px;
+    max-height: 2px;
+    border-radius: 50%;
+    background-color: #0eaf0e;
+    display: inline-block;
+    margin-left: 5px;
+    
+}
+
+.border-end-bottom {
+    border-bottom: 1px solid rgb(216, 216, 216);
+    border-right: 1px solid rgb(216, 216, 216);
+}
+
+.user-port-sample {
+    background-image: url(../img/portfolio1.jpg);
+    background-color: #cccccc;
+    /* Used if the image is unavailable */
+    height: 300px;
+    
+    /* You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+.show-on-hover {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    opacity: .8;
+    padding: 1.5rem;
+    display: none;
+}
+
+.user-port-sample:hover .show-on-hover {
+    display: block;
+}
+
+.top-skill .badge {
+    background-color: #f0f1fa;
+    color: #172B4D;
+    padding: .8rem;
+    margin-bottom: 5px;
+}
+
+.languages .badge {
+    background-color: #f0f1fa;
+    color: #313d52;
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+
+.ellipse-connect {
+    border-right: 2px solid #0052cc;
+    height: 50px;
+    position: absolute;
+    top: 87px;
+    left: 31px;
 }
