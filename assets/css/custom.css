@@ -422,3 +422,7 @@
     right: 280px;
     opacity: .3;
 }
+
+.create-project-cover {
+    height: 300px;
+}
