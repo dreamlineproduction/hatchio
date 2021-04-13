@@ -671,3 +671,50 @@
     position: relative;
     padding: 1.5rem;
   }
+
+  .contest-title-part {
+    padding: 3rem 0;
+    
+  }
+
+  .contest-pricing-part {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.473);
+  }
+
+  .description-cover{
+      
+      background-image: url(../img/contest-brief-back.png);
+      
+      /* Used if the image is unavailable */
+      /*You must set a specified height*/
+      background-position: left;
+      /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: auto;
+      /* Resize the background image to cover the entire container */
+     
+      
+  }
+  .description-required .badge{
+    padding: 10px 13px;
+    background-color: #a2beec54 !important;
+    margin-right: .5rem;
+    color: #bdc6d4;
+  }
+  .one{
+    
+        margin: 1rem 0;
+        color: inherit;
+        background-color: white;
+        border: 0;
+        opacity: .15;
+  }
+  .contest-pricing-icon .btn-light-cust {
+    color: #000;
+    background-color: #ececec33 !important;
+    border-color: #ececec33 !important;
+    border-radius: 5px;
+}
