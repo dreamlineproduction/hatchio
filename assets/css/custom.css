@@ -639,3 +639,35 @@
     width: 1.3em;
     height: 1.3em;
   }
+
+
+  .hatchio-account-balance {
+    background-color: #172B4D;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+
+  .hatchio-account-balance .form-check-input {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: #fff0;
+    border: 2px solid rgb(239 239 239 / 25%);
+  }
+
+
+  .g2g-final-preview {
+    background-image: url(../img/prize.png);
+    background-color: #f1f1f1;
+    /* Used if the image is unavailable */
+    /* height: 300px; You must set a specified height */
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: auto;
+    /* Resize the background image to cover the entire container */
+    border-radius: 10px;
+    position: relative;
+    padding: 1.5rem;
+  }
