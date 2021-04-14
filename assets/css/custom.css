@@ -730,3 +730,18 @@
     border-bottom: 3px solid #0052cc;
     font-weight: 600;
 }
+.file-requirements{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    
+    border-radius: 10px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-color: #172b4d1c;
+}
