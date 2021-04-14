@@ -698,14 +698,13 @@
      
       
   }
-  .description-required .badge{
+  .description-required .badge {
     padding: 10px 13px;
     background-color: #a2beec54 !important;
     margin-right: .5rem;
     color: #bdc6d4;
   }
-  .one{
-    
+  .one {
         margin: 1rem 0;
         color: inherit;
         background-color: white;
@@ -717,4 +716,17 @@
     background-color: #ececec33 !important;
     border-color: #ececec33 !important;
     border-radius: 5px;
+}
+
+
+.contest-details-menu .btn {
+    padding: 1.5rem 0;
+    border-radius: inherit;
+    border: 0;
+
+}
+
+.btn-nav-menu.active {
+    border-bottom: 3px solid #0052cc;
+    font-weight: 600;
 }
