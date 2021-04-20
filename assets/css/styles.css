@@ -305,6 +305,12 @@ a {
     max-height: 750px;
 }
 
+.entry-modal .btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .entry-modal .modal-header {
     display: block;
 }
@@ -320,8 +326,44 @@ a {
     font-size: 14px;
 }
 
+.feedback-area-start {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-height: 450px;
+}
 
-/* Portfolio image upload cropper */
+.contest-holder-comment .badge {
+    background-color: #F3F4F6 !important;
+    padding: .5rem 1.5rem;
+    color: #172b4d7a;
+    font-size: 14px;
+    margin-left: 10px;
+}
 
+.freelancer-comment .badge {
+    background-color: #F3F4F6 !important;
+    padding: .5rem 1.5rem;
+    color: #172b4d7a;
+    font-size: 14px;
+    margin-left: 10px;
+}
 
-/* PUSH MENU */
+.holder-comment {
+    margin-left: 48px;
+    margin-top: 10px;
+}
+
+.holder-comment p {
+    margin-bottom: 0;
+    font-size: 17px;
+}
+
+.post-comment-area .posting-form {
+    min-height: 80px;
+}
+
+.mini-avatar-image {
+    max-width: 35px;
+    min-width: 35px;
+    height: 35px;
+}

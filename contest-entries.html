@@ -115,7 +115,7 @@
                     <div class="contest-pricing-icon">
                         <button type="button" class="btn btn-light-cust text-muted me-2"><i class="far fa-bookmark"></i></button>
                         <button type="button" class="btn btn-light-cust text-muted me-2"><i class="far fa-check-square"></i></button>
-                        <button type="button" class="btn btn-primary px-4">Submit Work</button>
+                        <button type="button" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#submit-entry">Submit Work</button>
 
                     </div>
                 </div>
@@ -173,7 +173,9 @@
                     <h6 class="mb-1 float-end">#244</h6>
                 </div>
                 <div class="card">
-                    <img src="assets/img/web-design.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#entry-modal">
+                    <a href="javascript:void(0)">
+                        <img src="assets/img/web-design.jpg" class="card-img-top" alt="..." data-bs-toggle="modal" data-bs-target="#entry-modal">
+                    </a>
                     <div class="card-body clearfix">
                         <span class="rating-star-dark float-start">
                                 <i class="fas fa-star"></i>
@@ -304,14 +306,29 @@
     </div>
 
 
-    <!-- Modal -->
+    <!-- View Entry Modal -->
     <div class="modal fade entry-modal" id="entry-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="row">
                         <div class="col-md-9">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <div class="thumb-entry float-start">
+                                <button type="button" class="btn btn-light"><i class="fas fa-chevron-left"></i></button>
+                                <img src="assets/img/full-web.png" class="mini-avatar-image rounded" alt="">
+                                <img src="assets/img/full-web.png" class="mini-avatar-image rounded" alt="">
+                                <img src="assets/img/full-web.png" class="mini-avatar-image rounded" alt="">
+                                <img src="assets/img/full-web.png" class="mini-avatar-image rounded" alt="">
+
+                                <button type="button" class="btn btn-light"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+
+                            <div class="zoom-entry float-end">
+
+
+                                <button type="button" onclick="zoomin()" class="btn btn-light"><i class="fas fa-search-plus"></i></button>
+                                <button type="button" onclick="zoomout()" class="btn btn-light"><i class="fas fa-search-minus"></i></button>
+                            </div>
                         </div>
                         <div class="col-md-3">
                             <span>#224 <span class="text-muted"> By</span> Christopher N.</span>
@@ -324,8 +341,9 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="contest-image-area">
-                                <img src="assets/img/full-web.png" class="img-fluid">
+                            <div class="contest-image-area text-center">
+
+                                <img src="assets/img/full-web.png" class="img-fluid" id="sky">
                             </div>
                         </div>
                         <div class="col-md-3 bg-white">
@@ -339,7 +357,7 @@
                                 <div class="card-body p-0">
                                     <div class="row">
                                         <div class="col-md-4 float-start">
-                                            <i class="far fa-heart"></i> 30 Share:
+                                            <i class="far fa-heart"></i> 30
 
 
                                         </div>
@@ -360,11 +378,190 @@
                             <hr>
                             <div class="feedback-area-start mt-3">
                                 <h5 class="text-muted">Feedback</h5>
+
+                                <div class="feedback-start">
+                                    <div class="contest-holder-comment">
+                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
+                                        <div class="holder-comment">
+                                            <p>Excellent, really like it.</p>
+                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="freelancer-comment ms-5 mt-4 mb-3">
+                                        <img src="assets/img/big-user.jpg" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Jessica J.</span>
+                                        <div class="holder-comment">
+                                            <p>Thank you so much.</p>
+                                            <small>12 min ago</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="contest-holder-comment">
+                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
+                                        <div class="holder-comment">
+                                            <p>We have decided to award you congrats</p>
+                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div class="post-comment-area mt-4">
+                                <form>
+                                    <div class="mb-3">
+
+                                        <input type="text" class="form-control posting-form" id="post-comment" placeholder="Write a Comment ...">
+
+                                    </div>
+
+
+
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Submit Entry Modal -->
+    <div class="modal fade entry-modal" id="submit-entry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="thumb-entry">
+                                <h5>Submit Your Entry</h5>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="contest-image-area text-center">
+
+                                <img src="assets/img/full-web.png" class="img-fluid" id="sky">
+                            </div>
+                        </div>
+                        <div class="col-md-3 bg-white">
+                            <h5>Home Page Design</h5>
+                            <p>Hello! This contest is to create a brand new Freelancer platform, which takes the best parts of upwork.com... <a href="#"> Read More</a></p>
+                            <p class="text-muted">Attachments</p>
+                            <span class="badge bg-gray">Figma</span>
+                            <span class="badge bg-gray">Dropbox</span>
+                            <hr>
+                            <div class="card mt-3 border-0">
+                                <div class="card-body p-0">
+                                    <div class="row">
+                                        <div class="col-md-4 float-start">
+                                            <i class="far fa-heart"></i> 30
+
+
+                                        </div>
+                                        <div class="col-md-8 ">
+                                            <div class="share-entries-area d-inline-flex float-end">
+                                                <h6> Share:</h6>
+                                                <div class="shareon">
+                                                    <button class="facebook"></button>
+                                                    <button class="twitter"></button>
+                                                    <button class="whatsapp"></button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="feedback-area-start mt-3">
+                                <h5 class="text-muted">Feedback</h5>
+
+                                <div class="feedback-start">
+                                    <div class="contest-holder-comment">
+                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
+                                        <div class="holder-comment">
+                                            <p>Excellent, really like it.</p>
+                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="freelancer-comment ms-5 mt-4 mb-3">
+                                        <img src="assets/img/big-user.jpg" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Jessica J.</span>
+                                        <div class="holder-comment">
+                                            <p>Thank you so much.</p>
+                                            <small>12 min ago</small>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="contest-holder-comment">
+                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
+                                        <div class="holder-comment">
+                                            <p>We have decided to award you congrats</p>
+                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
+                                        </div>
+
+                                    </div>
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <div class="post-comment-area mt-4">
+                                <form>
+                                    <div class="mb-3">
+
+                                        <input type="text" class="form-control posting-form" id="post-comment" placeholder="Write a Comment ...">
+
+                                    </div>
+
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -379,6 +576,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/shareon.min.js"></script>
+
     <script>
         var tooltipTriggerList = [].slice.call(
             document.querySelectorAll('[data-toggle="tooltip "]')
@@ -387,6 +585,27 @@
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
         shareon();
+    </script>
+    <script>
+        function zoomin() {
+            var myImg = document.getElementById("sky");
+            var currWidth = myImg.clientWidth;
+            if (currWidth == 5000) {
+                alert("Maximum zoom-in level reached.");
+            } else {
+                myImg.style.width = (currWidth + 50) + "px";
+            }
+        }
+
+        function zoomout() {
+            var myImg = document.getElementById("sky");
+            var currWidth = myImg.clientWidth;
+            if (currWidth == 50) {
+                alert("Maximum zoom-out level reached.");
+            } else {
+                myImg.style.width = (currWidth - 50) + "px";
+            }
+        }
     </script>
 </body>
 
