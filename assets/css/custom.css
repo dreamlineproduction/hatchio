@@ -278,6 +278,12 @@
     height: 45px;
 }
 
+.smaller-avatar-image {
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+}
+
 .rated-design {
     background-image: url(../img/design-1.jpg);
     background-color: #cccccc;
@@ -426,6 +432,10 @@
     background-color: #503CD8;
 }
 
+.bg-contest-holder {
+    height: 1.8rem;
+}
+
 .btn-light-cust {
     color: #000;
     background-color: #ececec !important;
@@ -435,6 +445,11 @@
 
 .mt-cust {
     margin-top: 5rem;
+}
+
+.ms-cust {
+    margin-left: 3.5rem;
+    margin-top: .65rem;
 }
 
 .vertical-line-gray {
@@ -788,4 +803,31 @@
     color: #1560ce;
     background-color: #c4d9ff;
     border: 0;
+}
+
+.contest-comment-tabs .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: larger;
+}
+
+.contest-comment-tabs .nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: inherit;
+    padding: .75rem 0;
+    color: #adadad;
+}
+
+.contest-comment-tabs .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #0052cc;
+    background-color: inherit;
+    border-radius: inherit;
+    border-bottom: 2px solid #0052cc;
+    font-weight: 600;
 }
