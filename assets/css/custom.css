@@ -316,6 +316,10 @@
     color: #F8B128;
 }
 
+.rating-star-dark i {
+    color: #171a2e;
+}
+
 .color-yellow {
     color: #F8B128;
 }
@@ -366,11 +370,22 @@
     background-color: #172b4d1f !important;
     margin-right: .5rem;
     color: #2a3952c7;
+    margin-bottom: .5rem;
 }
 
 .search-contest input::placeholder {
     color: rgba(0, 0, 0, 0.575);
     opacity: 1;
+}
+
+.search-entry {
+    width: 300px;
+    display: inline;
+}
+
+.entry-sort {
+    width: 180px;
+    display: inline;
 }
 
 .more-option-collapse .card {
@@ -615,12 +630,13 @@
     border-radius: 50%;
 }
 
-.slider::-moz-range-thumb {
+
+/* .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     background: #4CAF50;
     cursor: pointer;
-}
+  } */
 
 .price-container {
     padding: 1rem 1rem;
@@ -668,4 +684,108 @@
     border-radius: 10px;
     position: relative;
     padding: 1.5rem;
+}
+
+.contest-title-part {
+    padding: 3rem 0;
+}
+
+.contest-pricing-part {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.473);
+}
+
+.description-cover {
+    background-image: url(../img/contest-brief-back.png);
+    /* Used if the image is unavailable */
+    /*You must set a specified height*/
+    background-position: left;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: auto;
+    /* Resize the background image to cover the entire container */
+}
+
+.description-required .badge {
+    padding: 10px 13px;
+    background-color: #a2beec54 !important;
+    margin-right: .5rem;
+    color: #bdc6d4;
+}
+
+.one {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: white;
+    border: 0;
+    opacity: .15;
+}
+
+.contest-pricing-icon .btn-light-cust {
+    color: #000;
+    background-color: #ececec33 !important;
+    border-color: #ececec33 !important;
+    border-radius: 5px;
+}
+
+.contest-details-menu .btn {
+    padding: 1.5rem 0;
+    border-radius: inherit;
+    border: 0;
+}
+
+.btn-nav-menu.active {
+    border-bottom: 3px solid #0052cc;
+    font-weight: 600;
+}
+
+.file-requirements {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    background-color: #172b4d1c;
+}
+
+.btn-entry-filter {
+    color: #172b4d;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+
+.btn-entry-filter.active {
+    color: #ffffff;
+    background-color: #172b4d;
+    border-color: #172b4d;
+}
+
+.entry-display .card {
+    border: inherit;
+    box-shadow: 0 .3rem 2rem rgba(0, 0, 0, 0.12)!important;
+    border-radius: 10px;
+}
+
+.entry-display .col-md-3 {
+    margin-bottom: 2rem;
+}
+
+.entry-display .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 195px;
+}
+
+.btn-light-cust-blue {
+    color: #1560ce;
+    background-color: #c4d9ff;
+    border: 0;
 }
