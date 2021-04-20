@@ -291,5 +291,37 @@ a {
     font-weight: 500;
 }
 
+.push-menu {
+    display: none;
+}
+
+.nav-bars-dots {
+    display: none;
+}
+
+.contest-image-area {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 750px;
+}
+
+.entry-modal .modal-header {
+    display: block;
+}
+
+.entry-modal .modal-body {
+    background: #fff;
+}
+
+.entry-modal .bg-gray {
+    background: #F3F4F6;
+    padding: .6rem 1.5rem;
+    color: #172B4D;
+    font-size: 14px;
+}
+
 
 /* Portfolio image upload cropper */
+
+
+/* PUSH MENU */
