@@ -291,5 +291,16 @@ a {
     font-weight: 500;
 }
 
+.push-menu {
+    display: none;
+}
+
+.nav-bars-dots {
+    display: none;
+}
+
 
 /* Portfolio image upload cropper */
+
+
+/* PUSH MENU */
