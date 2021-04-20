@@ -25,6 +25,46 @@
 </head>
 
 <body style="border-style: none;">
+    <input id="menu-switch" type="checkbox" hidden/>
+    <nav id="menu" role="navigation" class="shadow-cust push-menu">
+        <div class="brand">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust">
+                <div class="user-info-top text-dark mt-2 text-center">
+                    <h6 class="mb-0">Jessica J.</h6>
+                    <small class="text-muted">$8000.00 USD</small>
+
+
+                </div>
+
+            </a>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-bandcamp me-3"></i>Discover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-trophy me-3"></i>Contests</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase me-3"></i>Jobs</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-plus-square me-3"></i>Post Project</a>
+            </li>
+        </ul>
+
+        <div class="bottom-settings">
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
+            <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
+        </div>
+    </nav>
+
+    <label for="menu-switch" id="menu-toggle" class="nav-bars-dots">   <i class="fas fa-bars"></i></label>
 
 
     <nav class="navbar navbar-expand-lg bg-dark-blue py-4 px-3 border-bottom">
@@ -81,315 +121,317 @@
 
 
 
+
     <div class="container-fluid bg-dark-blue position-relative">
         <img src="assets/img/newsfeed-back.png" class="img-fluid" alt="">
 
 
-
-        <div class="container feed-body position-absolute top-50 start-50 translate-middle-x">
-
-
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="clearfix mb-3">
-                        <h3 class="text-white float-start">News Feed</h3>
-                        <a href="#" class="btn btn-light-blue float-end px-4">Switch to Employer</a>
-                    </div>
-                </div>
-            </div>
+        <div class="page-wrap">
+            <div class="container feed-body position-absolute top-50 start-50 translate-middle-x" role="main">
 
 
-
-            <div class="row">
-                <div class="col-md-8">
-
-
-
-
-
-
-                    <div class="card border-0 shadow-cust">
-
-                        <div class="card-body">
-                            <div class="clearfix">
-                                <div class="d-flex float-start">
-                                    <img src="assets/img/Uber-Logo.jpg" class="small-avatar-image rounded shadow-cust" alt="">
-                                    <div class="">
-                                        <h6 class="mx-3 mb-0"><strong><a href="">Uber</a></strong> rated your entry <strong> <a href=""> Design a Creative UI</a></strong></h6>
-                                        <small class="text-muted mx-3">24 min ago</small>
-
-                                    </div>
-                                </div>
-                                <div class="float-end">
-                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
-                                </div>
-                            </div>
-
-
-                            <div class="row mt-4">
-                                <div class="col-md-3">
-                                    <div class="rated-design">
-
-                                        <p class="design-serial-no">#44</p>
-
-                                    </div>
-                                    <div class="rating-star mt-2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="rated-design">
-
-                                        <p class="design-serial-no">#32</p>
-
-                                    </div>
-                                    <div class="rating-star mt-2">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="clearfix mb-3">
+                            <h3 class="text-white float-start">News Feed</h3>
+                            <a href="#" class="btn btn-light-blue float-end px-4">Switch to Employer</a>
                         </div>
                     </div>
+                </div>
 
 
 
-                    <div class="card border-0 shadow-cust my-3">
-                        <div class="card-body ">
-                            <div class="clearfix">
-                                <div class="d-flex float-start">
-                                    <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
-                                    <div class="">
-                                        <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has seleted you as winner.</h6>
-                                        <small class="text-muted mx-3">5 days ago</small>
+                <div class="row">
+                    <div class="col-md-8">
 
+
+
+
+
+
+                        <div class="card border-0 shadow-cust">
+
+                            <div class="card-body">
+                                <div class="clearfix">
+                                    <div class="d-flex float-start">
+                                        <img src="assets/img/Uber-Logo.jpg" class="small-avatar-image rounded shadow-cust" alt="">
+                                        <div class="">
+                                            <h6 class="mx-3 mb-0"><strong><a href="">Uber</a></strong> rated your entry <strong> <a href=""> Design a Creative UI</a></strong></h6>
+                                            <small class="text-muted mx-3">24 min ago</small>
+
+                                        </div>
+                                    </div>
+                                    <div class="float-end">
+                                        <a href="#"> <i class="fas fa-arrow-right"></i> </a>
                                     </div>
                                 </div>
-                                <div class="float-end">
-                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
-                                </div>
-                            </div>
 
-                            <hr class="my-4" style="opacity: .1;">
 
-                            <div class="win-card">
                                 <div class="row mt-4">
-                                    <div class="col-md-7">
-                                        <h5>High Level Application Designer</h5>
-                                        <p class="text-muted">Complete the contest handover to receive your prize</p>
-                                        <h6 class="text-muted mt-5">Winning Prize</h6>
-                                        <h2>1,700 <span class="text-muted">USD</span></h2>
-                                        <button type="button" class="btn btn-primary primary-color mt-3">Complete Handover</button>
-                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="rated-design">
 
+                                            <p class="design-serial-no">#44</p>
 
-                                    <div class="col-md-5">
-                                        <div class="wining-design">
-                                            <i class="fas fa-trophy"></i>
                                         </div>
+                                        <div class="rating-star mt-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="rated-design">
 
-                                        <div class="clearfix">
+                                            <p class="design-serial-no">#32</p>
 
-                                            <div class="float-start mt-2">
-                                                <p>Entry #122</p>
-                                            </div>
-
-                                            <div class="rating-star mt-2 float-end">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-
-
-
+                                        </div>
+                                        <div class="rating-star mt-2">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
+
+
+
+                        <div class="card border-0 shadow-cust my-3">
+                            <div class="card-body ">
+                                <div class="clearfix">
+                                    <div class="d-flex float-start">
+                                        <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
+                                        <div class="">
+                                            <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has seleted you as winner.</h6>
+                                            <small class="text-muted mx-3">5 days ago</small>
+
+                                        </div>
+                                    </div>
+                                    <div class="float-end">
+                                        <a href="#"> <i class="fas fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4" style="opacity: .1;">
+
+                                <div class="win-card">
+                                    <div class="row mt-4">
+                                        <div class="col-md-7">
+                                            <h5>High Level Application Designer</h5>
+                                            <p class="text-muted">Complete the contest handover to receive your prize</p>
+                                            <h6 class="text-muted mt-5">Winning Prize</h6>
+                                            <h2>1,700 <span class="text-muted">USD</span></h2>
+                                            <button type="button" class="btn btn-primary primary-color mt-3">Complete Handover</button>
+                                        </div>
+
+
+                                        <div class="col-md-5">
+                                            <div class="wining-design">
+                                                <i class="fas fa-trophy"></i>
+                                            </div>
+
+                                            <div class="clearfix">
+
+                                                <div class="float-start mt-2">
+                                                    <p>Entry #122</p>
+                                                </div>
+
+                                                <div class="rating-star mt-2 float-end">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card border-0 shadow-cust mt-3">
+                            <div class="card-body ">
+                                <div class="clearfix">
+                                    <div class="d-flex float-start">
+                                        <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust" alt="">
+                                        <div class="">
+                                            <h6 class="mx-3 mb-0"><strong><a href="">Robert G.</a></strong> has provided feedback for Great Content Landing page design</h6>
+                                            <small class="text-muted mx-3">5 days ago</small>
+
+                                        </div>
+                                    </div>
+                                    <div class="float-end">
+                                        <a href="#"> <i class="fas fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+
+                                <div class="mt-5">
+                                    <a href="">
+                                        <h5><u>Great Content Landing page design</u></h5>
+                                    </a>
+
+                                    <h4 class="text-muted mt-3">“Syed is creative, brilliant, and works hard to achieve a fantastic end result.”</h4>
+
+                                    <div class="rating-star mt-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <h5 class="d-inline mx-2">5.0</h5>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="card border-0 shadow-cust my-3">
+                            <div class="card-body ">
+                                <div class="clearfix">
+                                    <div class="d-flex float-start">
+                                        <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
+                                        <div class="">
+                                            <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has hired your for project.</h6>
+                                            <small class="text-muted mx-3">5 days ago</small>
+
+                                        </div>
+                                    </div>
+                                    <div class="float-end">
+                                        <a href="#"> <i class="fas fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+
+                                <hr class="my-4" style="opacity: .1;">
+
+                                <div class="mt-4">
+                                    <a href="">
+                                        <h5>Design new Freelance Platform Hatchio.com</h5>
+                                    </a>
+
+                                    <h6 class="text-muted">Click the Accept button below to start working. And discuss the project before accepting.</h6>
+
+                                    <div class="d-flex my-4">
+                                        <div class="">
+                                            <h6 class="text-muted">Budget</h6>
+                                            <h4>$1,700 <span class="text-muted"> USD</span></h4>
+                                        </div>
+                                        <div class="mx-5">
+                                            <h6 class="text-muted">Accept Before</h6>
+                                            <h4 class="text-danger">1 day 2h</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="required-skill">
+                                        <h6 class="text-muted">Required Skills</h6>
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <button type="button" class="btn btn-success mt-4 py-2 px-4">Accept Project</button>
+                                    <button type="button" class="btn btn-light-trans mx-3 mt-4 py-2 px-4">Chat</button>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
 
 
+                    <div class="col-md-4 welcome-block">
 
-                    <div class="card border-0 shadow-cust mt-3">
-                        <div class="card-body ">
-                            <div class="clearfix">
-                                <div class="d-flex float-start">
-                                    <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust" alt="">
-                                    <div class="">
-                                        <h6 class="mx-3 mb-0"><strong><a href="">Robert G.</a></strong> has provided feedback for Great Content Landing page design</h6>
-                                        <small class="text-muted mx-3">5 days ago</small>
+                        <div class="clearfix">
+                            <div class="card border-0 shadow-cust float-start" style="width: 19rem;">
 
-                                    </div>
+                                <div class="card-body">
+
+                                    <p class="text-muted mb-2">Welcome Back</p>
+                                    <h4>Jessica J.</h4>
+                                    <hr class="my-4">
+
+                                    <p class="text-muted mb-2">Account Balance</p>
+                                    <h4 class="d-inline">$0</h4><small class="text-muted mx-1">USD</small>
+
                                 </div>
-                                <div class="float-end">
-                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
+                            </div>
+                            <div class="card border-0 shadow-cust float-end" style="width: 6rem;">
+
+                                <div class="card-body text-center welcome-features">
+                                    <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
+                                    <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
+                                    <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
+                                    <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
+
                                 </div>
                             </div>
 
-                            <div class="mt-5">
-                                <a href="">
-                                    <h5><u>Great Content Landing page design</u></h5>
-                                </a>
 
-                                <h4 class="text-muted mt-3">“Syed is creative, brilliant, and works hard to achieve a fantastic end result.”</h4>
-
-                                <div class="rating-star mt-2">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <h5 class="d-inline mx-2">5.0</h5>
-                                </div>
-                            </div>
 
 
                         </div>
-                    </div>
 
 
-                    <div class="card border-0 shadow-cust my-3">
-                        <div class="card-body ">
-                            <div class="clearfix">
-                                <div class="d-flex float-start">
-                                    <img src="assets/img/Apple-Logo.png" class="small-avatar-image rounded shadow-cust" alt="">
-                                    <div class="">
-                                        <h6 class="mx-3 mb-0"><strong><a href="">Apple</a></strong> has hired your for project.</h6>
-                                        <small class="text-muted mx-3">5 days ago</small>
-
-                                    </div>
-                                </div>
-                                <div class="float-end">
-                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
-                                </div>
-                            </div>
-
-                            <hr class="my-4" style="opacity: .1;">
-
-                            <div class="mt-4">
-                                <a href="">
-                                    <h5>Design new Freelance Platform Hatchio.com</h5>
-                                </a>
-
-                                <h6 class="text-muted">Click the Accept button below to start working. And discuss the project before accepting.</h6>
-
-                                <div class="d-flex my-4">
-                                    <div class="">
-                                        <h6 class="text-muted">Budget</h6>
-                                        <h4>$1,700 <span class="text-muted"> USD</span></h4>
-                                    </div>
-                                    <div class="mx-5">
-                                        <h6 class="text-muted">Accept Before</h6>
-                                        <h4 class="text-danger">1 day 2h</h4>
-                                    </div>
-                                </div>
-
-                                <div class="required-skill">
-                                    <h6 class="text-muted">Required Skills</h6>
-                                    <span class="badge bg-secondary">HTML</span>
-                                    <span class="badge bg-secondary">GRAPHIC DESIGN</span>
-                                    <span class="badge bg-secondary">ILLUSTRATOR</span>
-                                    <span class="badge bg-secondary">USER EXPERIENCE</span>
-
-                                </div>
-
-                                <button type="button" class="btn btn-success mt-4 py-2 px-4">Accept Project</button>
-                                <button type="button" class="btn btn-light-trans mx-3 mt-4 py-2 px-4">Chat</button>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-
-                </div>
-
-
-                <div class="col-md-4">
-
-                    <div class="clearfix">
-                        <div class="card border-0 shadow-cust float-start" style="width: 19rem;">
+                        <div class="card border-0 shadow-cust mt-3">
 
                             <div class="card-body">
 
-                                <p class="text-muted mb-2">Welcome Back</p>
-                                <h4>Jessica J.</h4>
-                                <hr class="my-4">
+                                <div class="clearfix">
+                                    <div class="float-start">
+                                        <p class="text-muted mb-2">Leaderboard<i class="fas fa-info-circle mx-2" data-toggle="tooltip" data-placement="top" title="Your Ranking"></i></p>
+                                        <h4 class="mb-0"><span class="text-muted">R</span> 0</h4>
+                                    </div>
 
-                                <p class="text-muted mb-2">Account Balance</p>
-                                <h4 class="d-inline">$0</h4><small class="text-muted mx-1">USD</small>
-
-                            </div>
-                        </div>
-                        <div class="card border-0 shadow-cust float-end" style="width: 6rem;">
-
-                            <div class="card-body text-center">
-                                <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
-                                <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
-                                <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
-                                <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
-
+                                    <div class="float-end">
+                                        <i class="fas fa-crown text-blue"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
 
+                        <div class="card border-0 shadow-cust mt-3">
+
+
+                            <div class="card-header bg-white border-bottom">
+                                <div class="clearfix">
+                                    <div class="float-start">
+                                        <h5 class="mb-0">Recent Projects</h5>
+                                    </div>
+
+                                    <div class="float-end">
+                                        <a href="#"> <i class="fas fa-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="card-body">
+
+                                <p class="display-6 text-muted mb-0" style="opacity: .5;">No Projects</p>
+                            </div>
+                        </div>
 
 
                     </div>
-
-
-                    <div class="card border-0 shadow-cust mt-3">
-
-                        <div class="card-body">
-
-                            <div class="clearfix">
-                                <div class="float-start">
-                                    <p class="text-muted mb-2">Leaderboard<i class="fas fa-info-circle mx-2" data-toggle="tooltip" data-placement="top" title="Your Ranking"></i></p>
-                                    <h4 class="mb-0"><span class="text-muted">R</span> 0</h4>
-                                </div>
-
-                                <div class="float-end">
-                                    <i class="fas fa-crown text-blue"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="card border-0 shadow-cust mt-3">
-
-
-                        <div class="card-header bg-white border-bottom">
-                            <div class="clearfix">
-                                <div class="float-start">
-                                    <h5 class="mb-0">Recent Projects</h5>
-                                </div>
-
-                                <div class="float-end">
-                                    <a href="#"> <i class="fas fa-arrow-right"></i> </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="card-body">
-
-                            <p class="display-6 text-muted mb-0" style="opacity: .5;">No Projects</p>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -458,12 +500,14 @@
         </div>
     </div>
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+
     <script>
         var tooltipTriggerList = [].slice.call(
             document.querySelectorAll('[data-toggle="tooltip"]')
@@ -472,6 +516,7 @@
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
     </script>
+
 </body>
 
 </html>

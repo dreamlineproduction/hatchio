@@ -117,6 +117,14 @@ a {
     opacity: .3;
 }
 
+.project-date-pick .input-group-text {
+    border: 2px solid #172b4d1f;
+}
+
+.fa-info-circle {
+    opacity: .3;
+}
+
 .vertical-line-plus {
     border: .5px solid #fff;
     height: 100%;
@@ -283,5 +291,16 @@ a {
     font-weight: 500;
 }
 
+.push-menu {
+    display: none;
+}
+
+.nav-bars-dots {
+    display: none;
+}
+
 
 /* Portfolio image upload cropper */
+
+
+/* PUSH MENU */
