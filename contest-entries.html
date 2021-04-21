@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/typeface.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/custom.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/shareon.min.css">
+    <script src="https://unpkg.com/markerjs2/markerjs2.js"></script>
     <link rel="stylesheet" href="assets/css/responsive.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -343,7 +344,20 @@
                         <div class="col-md-9">
                             <div class="contest-image-area text-center">
 
-                                <img src="assets/img/full-web.png" class="img-fluid" id="sky">
+                                <div style="
+                                  position: relative;
+                                  display: flex;
+                                  flex-direction: column;
+                                  align-items: center;
+                                  justify-content: center;
+                                  padding-top: 50px;
+                                ">
+                                    <!-- we are putting a copy of the original image under the result image so it's always annotation-free -->
+                                    <img id="sourceImage" src="assets/img/full-web.png" style="max-width: 100%; max-height: 80%;" crossorigin="anonymous" />
+                                    <img id="sampleImage" src="assets/img/full-web.png" style="max-width: 100%; max-height: 100%; position: absolute;" crossorigin="anonymous" />
+
+
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-3 bg-white">
@@ -576,6 +590,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/shareon.min.js"></script>
+    <script src="assets/js/markme.js"></script>
 
     <script>
         var tooltipTriggerList = [].slice.call(
@@ -588,7 +603,7 @@
     </script>
     <script>
         function zoomin() {
-            var myImg = document.getElementById("sky");
+            var myImg = document.getElementById("sourceImage");
             var currWidth = myImg.clientWidth;
             if (currWidth == 5000) {
                 alert("Maximum zoom-in level reached.");
@@ -598,7 +613,7 @@
         }
 
         function zoomout() {
-            var myImg = document.getElementById("sky");
+            var myImg = document.getElementById("sourceImage");
             var currWidth = myImg.clientWidth;
             if (currWidth == 50) {
                 alert("Maximum zoom-out level reached.");
@@ -607,6 +622,7 @@
             }
         }
     </script>
+
 </body>
 
 </html>
