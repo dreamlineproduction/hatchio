@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <!-- add to document <head> -->
+    <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css" rel="stylesheet" />
 </head>
 
 <body style="border-style: none;">
@@ -344,14 +347,7 @@
                         <div class="col-md-9">
                             <div class="contest-image-area text-center">
 
-                                <div style="
-                                  position: relative;
-                                  display: flex;
-                                  flex-direction: column;
-                                  align-items: center;
-                                  justify-content: center;
-                                  padding-top: 50px;
-                                ">
+                                <div class="mark-tool">
                                     <!-- we are putting a copy of the original image under the result image so it's always annotation-free -->
                                     <img id="sourceImage" src="assets/img/full-web.png" style="max-width: 100%; max-height: 80%;" crossorigin="anonymous" />
                                     <img id="sampleImage" src="assets/img/full-web.png" style="max-width: 100%; max-height: 100%; position: absolute;" crossorigin="anonymous" />
@@ -460,7 +456,7 @@
     <div class="modal fade entry-modal" id="submit-entry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header border-0">
                     <div class="row">
                         <div class="col-md-9">
                             <div class="thumb-entry">
@@ -480,98 +476,160 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-9">
-                            <div class="contest-image-area text-center">
+                            <div class="mx-auto upload-work-file-area">
+                                <div class="upload-work-file-area1">
 
-                                <img src="assets/img/full-web.png" class="img-fluid" id="sky">
+                                    <h4>Darg file or upload a file</h4>
+                                    <p>PNG, GIF or JPG (RGB)</p>
+                                    <p>Maximum file size of 8mb</p>
+                                    <p>Minimum dimensions of 960px by 960px</p>
+                                    <p>Maximum dimensions of 2000px by 2000px</p>
+                                    <p>Check out how to use the cropping tool.</p>
+
+                                    <div class="upload-entry-button">
+                                        <button type="button" class="btn btn-primary pe-5 ps-5">Upload</button>
+                                    </div>
+                                    <!-- <div class="box-2">
+                                        <div class="result"></div>
+                                    </div> -->
+
+
+
+                                    <!-- <div class="box">
+                                        <div class="options hide">
+
+                                            <input type="number" class="img-w" value="960" min="100" max="2000" / hidden>
+                                        </div>
+
+                                        <button class="btn btn-primary save hide">Crop</button>
+
+                                    </div> -->
+                                </div>
+
+
                             </div>
+
+                            <div class="uploaded-file">
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                File name 35364577.png
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger" id="b4"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                gskldngk3256457878.mov
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                didskfhg 934530496.jpg
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                thdsfl.gif
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                         <div class="col-md-3 bg-white">
-                            <h5>Home Page Design</h5>
-                            <p>Hello! This contest is to create a brand new Freelancer platform, which takes the best parts of upwork.com... <a href="#"> Read More</a></p>
-                            <p class="text-muted">Attachments</p>
-                            <span class="badge bg-gray">Figma</span>
-                            <span class="badge bg-gray">Dropbox</span>
-                            <hr>
+                            <div class="entry-preview text-center">
+                                <h5>Preview</h5>
+                                <img src="https://via.placeholder.com/400x400.png">
+                                <!-- <div class="box-2 img-result hide">
+                                   
+                                    <img class="cropped img-fluid" src="" alt="">
+                                </div> -->
+                            </div>
+
+
                             <div class="card mt-3 border-0">
                                 <div class="card-body p-0">
                                     <div class="row">
-                                        <div class="col-md-4 float-start">
-                                            <i class="far fa-heart"></i> 30
+                                        <div class="col-md-12 float-start">
+                                            <div class="mb-5">
+                                                <label for="entry_description" class="form-label">Description</label>
+                                                <textarea class="form-control" id="entry_description" rows="3" placeholder="Ex. Discribe about this project .."></textarea>
+                                            </div>
 
-
-                                        </div>
-                                        <div class="col-md-8 ">
-                                            <div class="share-entries-area d-inline-flex float-end">
-                                                <h6> Share:</h6>
-                                                <div class="shareon">
-                                                    <button class="facebook"></button>
-                                                    <button class="twitter"></button>
-                                                    <button class="whatsapp"></button>
+                                            <div class="contest-terms-area">
+                                                <h5>Requirements</h5>
+                                                <li>I agree to the code of conduct</li>
+                                                <li>I understand the Copyright issue.</li>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        I understand and agree to the requirements
+                                                    </label>
+                                                </div>
+                                                <div class="submit-action mt-4">
+                                                    <button type="button" class="btn btn-primary pe-5 ps-5">Upload</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Cancel</button>
                                                 </div>
                                             </div>
 
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="feedback-area-start mt-3">
-                                <h5 class="text-muted">Feedback</h5>
-
-                                <div class="feedback-start">
-                                    <div class="contest-holder-comment">
-                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
-                                        <div class="holder-comment">
-                                            <p>Excellent, really like it.</p>
-                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
-                                        </div>
-
-                                    </div>
 
 
-                                    <div class="freelancer-comment ms-5 mt-4 mb-3">
-                                        <img src="assets/img/big-user.jpg" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Jessica J.</span>
-                                        <div class="holder-comment">
-                                            <p>Thank you so much.</p>
-                                            <small>12 min ago</small>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="contest-holder-comment">
-                                        <img src="assets/img/profile-avatar.png" class="mini-avatar-image rounded" alt=""> <span class="badge bg-secondary">Contest Holder</span>
-                                        <div class="holder-comment">
-                                            <p>We have decided to award you congrats</p>
-                                            <small>12 min ago</small> <small class="ms-4"><a href="#"> Reply</a></small>
-                                        </div>
-
-                                    </div>
-
-
-
-
-
-
-                                </div>
-
-
-
-
-
-                            </div>
-
-                            <div class="post-comment-area mt-4">
-                                <form>
-                                    <div class="mb-3">
-
-                                        <input type="text" class="form-control posting-form" id="post-comment" placeholder="Write a Comment ...">
-
-                                    </div>
-
-
-
-                                </form>
-                            </div>
                         </div>
                     </div>
 
@@ -591,6 +649,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/shareon.min.js"></script>
     <script src="assets/js/markme.js"></script>
+
+    <!-- <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script> -->
 
     <script>
         var tooltipTriggerList = [].slice.call(
@@ -622,6 +683,68 @@
             }
         }
     </script>
+
+    <!-- <script>
+        // vars
+        let result = document.querySelector('.result'),
+            img_result = document.querySelector('.img-result'),
+            img_w = document.querySelector('.img-w'),
+            img_h = document.querySelector('.img-h'),
+            options = document.querySelector('.options'),
+            save = document.querySelector('.save'),
+            cropped = document.querySelector('.cropped'),
+            dwn = document.querySelector('.download'),
+            upload = document.querySelector('#file-input'),
+            cropper = '';
+
+        // on change show image with crop options
+        upload.addEventListener('change', (e) => {
+            if (e.target.files.length) {
+                // start file reader
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    if (e.target.result) {
+                        // create new image
+                        let img = document.createElement('img');
+                        img.id = 'image';
+                        img.src = e.target.result
+                            // clean result before
+                        result.innerHTML = '';
+                        // append new image
+                        result.appendChild(img);
+                        // show save btn and options
+                        save.classList.remove('hide');
+                        options.classList.remove('hide');
+                        // init cropper
+                        cropper = new Cropper(img);
+                    }
+                };
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
+
+        // save on click
+        save.addEventListener('click', (e) => {
+            e.preventDefault();
+            // get result to data uri
+            let imgSrc = cropper.getCroppedCanvas({
+                width: img_w.value // input value
+            }).toDataURL();
+            // remove hide class of img
+            cropped.classList.remove('hide');
+            img_result.classList.remove('hide');
+            // show image cropped
+            cropped.src = imgSrc;
+            dwn.classList.remove('hide');
+            dwn.download = 'imagename.png';
+            dwn.setAttribute('href', imgSrc);
+        });
+    </script> -->
+
+    <!-- <script>
+        const inputElement = document.querySelector('input[type="file"]');
+        const pond = FilePond.create(inputElement);
+    </script> -->
 
 </body>
 

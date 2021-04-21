@@ -1,3 +1,30 @@
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 body {
     font-family: 'Circular Std Book';
     font-weight: 500;
@@ -12,6 +39,12 @@ a {
 
 .bg-light-blue {
     background: rgba(0, 82, 204, 0.03);
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0052CC;
+    border-color: #0052CC;
 }
 
 .bg-dark-blue {
@@ -366,4 +399,73 @@ a {
     max-width: 35px;
     min-width: 35px;
     height: 35px;
+}
+
+.mark-tool {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.__markerjs2_toolbar {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    box-sizing: content-box;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.__markerjs2_toolbox {
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    box-sizing: content-box;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.filepond--root .filepond--credits {
+    display: none;
+}
+
+.upload-work-file-area {
+    width: 100%;
+    border: 1px dashed #ccc;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+.upload-work-file-area1 .hide {
+    display: none;
+}
+
+.upload-entry-button .btn-primary {
+    background: #E6EEFA;
+    border: #E6EEFA;
+    color: #0052CC;
+}
+
+.upload-entry-button .btn-primary:hover {
+    background: #0052CC;
+    border: #E6EEFA;
+    color: #fff;
 }
