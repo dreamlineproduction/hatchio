@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Login- Hatchio</title>
+    <title>Welcome to Hatchio</title>
     <meta name="description" content="Free themes for students, teachers, and public use in learning purpose. Made with Bootstrap 5.">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
@@ -26,6 +26,47 @@
 
 <body style="border-style: none;">
 
+    <input id="menu-switch" type="checkbox" hidden/>
+    <nav id="menu" role="navigation" class="shadow-cust push-menu">
+        <div class="brand">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust">
+                <div class="user-info-top text-dark mt-2 text-center">
+                    <h6 class="mb-0">Jessica J.</h6>
+                    <small class="text-muted">$8000.00 USD</small>
+
+
+                </div>
+
+            </a>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-bandcamp me-3"></i>Discover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-trophy me-3"></i>Contests</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase me-3"></i>Jobs</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-plus-square me-3"></i>Post Project</a>
+            </li>
+        </ul>
+
+        <div class="bottom-settings">
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
+            <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
+        </div>
+    </nav>
+
+    <label for="menu-switch" id="menu-toggle" class="nav-bars-dots">   <i class="fas fa-bars"></i></label>
+
 
     <nav class="navbar navbar-expand-lg bg-dark-blue py-4 px-3 border-bottom">
         <div class="container-fluid">
@@ -33,31 +74,120 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+            <div class="vertical-line-logo"></div>
             <div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-bandcamp"></i>Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-trophy"></i>Contests</a>
+                        <a class="nav-link" href="browse-contest.html"><i class="fas fa-trophy"></i>Contests</a>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a class="text-white mx-3" href=""><i class="fas fa-crown"></i></a>
+                <div class="d-flex align-items-center">
+                    <a class="text-white mx-3" href="top-freelancers.html"><i class="fas fa-crown"></i></a>
                     <a class="text-white mx-3" href=""><i class="fas fa-search"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-comment"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-bell"></i></a>
-                    <button type="button" class="btn btn-primary btn-sm mx-3"><i class="fas fa-plus m-0"></i></button>
+                    <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
+                    </a>
+                    <div class="dropdown notification-dropdown">
+                        <a class="text-white mx-3 " href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bell"></i></a>
 
 
+
+                        <ul class="dropdown-menu shadow-cust notification-outer p-2 border-0" aria-labelledby="dropdownMenuLink">
+                            <div class="1">
+                                <div class="col-md-12 notification-title p-3 pb-0">
+                                    <h6>RECENT UPDATES</h6>
+                                    <hr>
+                                </div>
+                                <div class="col-md-12 notification-wraper">
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <a class="btn btn-primary btn-sm mx-3 create-new-button-plus" href="create-project-details.html" role="button"><i class="fas fa-plus m-0"></i></a>
+
+                    <div class="user-info-top text-white ms-4 text-end">
+                        <h6 class="mb-0">Jessica J.</h6>
+                        <small class="text-muted">$8000.00 USD</small>
+
+
+                    </div>
+                    <div class="dropdown user-dropdown">
+
+                        <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust ms-3 dropdown-toggle" alt="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="user-profile.html"><i class="fas fa-user"></i> View Profile</a></li>
+                            <li><a class="dropdown-item" href="upgrade-membership.html"><i class="fas fa-id-card"></i> Membership</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item">Balance : $8000 USD</a></li>
+                            <li><a class="dropdown-item" href="make-deposit.html"><i class="fas fa-money-check-alt"></i> Make a deposit</a></li>
+                            <li><a class="dropdown-item" href="withdraw-earning.html"><i class="fas fa-university"></i> Withdraw Earning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="get-support.html"><i class="fas fa-question-circle"></i> Support</a></li>
+                            <li><a class="dropdown-item text-danger" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="vertical-line-plus"></div>
                 </div>
+
             </div>
         </div>
+        </div>
     </nav>
+
 
 
 
