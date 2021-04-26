@@ -169,7 +169,6 @@ a {
 
 .user-dropdown .dropdown-menu {
     left: -176px;
-    margin-top: 10px !important;
 }
 
 .user-dropdown .dropdown-menu {
@@ -216,7 +215,6 @@ a {
 
 .notification-dropdown .dropdown-menu {
     left: -366px;
-    margin-top: 10px !important;
 }
 
 .notification-dropdown .dropdown-menu {
@@ -560,44 +558,67 @@ a {
     color: #fff;
 }
 
-.search-box {
-    display: flex;
-    background: #08090A;
-    border-radius: 4em;
+.create-new-button-plus .fas {
+    margin-top: 5px !important;
 }
 
-.search-box-input {
-    width: 0px;
+.search-box label {
+    position: relative;
+    cursor: pointer;
+}
+
+.search-box .search-icon:before {
+    content: "\f002";
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    right: 16px;
+    bottom: 0px;
+    font-family: "FontAwesome";
+    color: #000000;
+}
+
+.search-box input {
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    padding: 16px;
+    border-radius: 8px;
     font-size: 1em;
-    color: #fff;
-    transition: .5s;
+    transition: 0.5s;
+    color: #000000;
+    background-color: #fff;
+    caret-color: #828e9e;
 }
 
-.search-box-btn {
-    display: flex;
-    border-radius: 50%;
-    width: 4em;
-    height: 4em;
-    background: white;
-    transition: .3s;
+.search-box input:hover {
+    cursor: pointer;
 }
 
-.search-box-icon {
-    margin: auto;
-    color: black;
+.search-box input:focus {
+    width: 25vw;
+    box-shadow: none;
 }
 
-.search-box-input::placeholder {
-    color: white;
-    opacity: .7;
+.search-box input:focus~.search-icon {
+    transition: 0.1s;
+    opacity: 0;
 }
 
-.search-box:hover .search-box-input {
-    padding-left: 2em;
-    padding-right: 1em;
-    width: 340px;
+@media only screen and (max-width: 400px) {
+    .search-box input:focus {
+        width: 50vw;
+        transition: 0.5s;
+    }
 }
 
-.search-box-btn:active {
-    transform: scale(.75);
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.message-inner h6 {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 0;
 }
