@@ -559,3 +559,45 @@ a {
     border: #E6EEFA;
     color: #fff;
 }
+
+.search-box {
+    display: flex;
+    background: #08090A;
+    border-radius: 4em;
+}
+
+.search-box-input {
+    width: 0px;
+    font-size: 1em;
+    color: #fff;
+    transition: .5s;
+}
+
+.search-box-btn {
+    display: flex;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    background: white;
+    transition: .3s;
+}
+
+.search-box-icon {
+    margin: auto;
+    color: black;
+}
+
+.search-box-input::placeholder {
+    color: white;
+    opacity: .7;
+}
+
+.search-box:hover .search-box-input {
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 340px;
+}
+
+.search-box-btn:active {
+    transform: scale(.75);
+}

@@ -90,7 +90,14 @@
                 </ul>
                 <div class="d-flex align-items-center">
                     <a class="text-white mx-3" href="top-freelancers.html"><i class="fas fa-crown"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-search"></i></a>
+
+                    <div class="search-box">
+                        <input type="text" class="search-box-input" placeholder="What are you looking for ?">
+                        <button class="search-box-btn">
+                          <i class="search-box-icon material-icons">search</i>
+                        </button>
+                    </div>
+                    <a class="text-white mx-3 search-box" href=""><i class="fas fa-search"></i></a>
                     <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
                     </a>
@@ -408,14 +415,34 @@
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle=search-form]').click(function() {
+                $('.search-form-wrapper').toggleClass('open');
+                $('.search-form-wrapper .search').focus();
+                $('html').toggleClass('search-form-open');
+            });
+            $('[data-toggle=search-form-close]').click(function() {
+                $('.search-form-wrapper').removeClass('open');
+                $('html').removeClass('search-form-open');
+            });
+            $('.search-form-wrapper .search').keypress(function(event) {
+                if ($(this).val() == "Search") $(this).val("");
+            });
 
+            $('.search-close').click(function(event) {
+                $('.search-form-wrapper').removeClass('open');
+                $('html').removeClass('search-form-open');
+            });
+        });
+    </script>
 </body>
 
 </html>
