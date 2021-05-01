@@ -12,6 +12,7 @@
     <link rel="manifest" href="manifest.json?h=28dd4702cfc5b1fa38461c757b9c947b">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=a436bee1e5ae414f98db7ca13adfd7c0">
@@ -31,6 +32,47 @@
 
 <body style="border-style: none;">
 
+    <input id="menu-switch" type="checkbox" hidden/>
+    <nav id="menu" role="navigation" class="shadow-cust push-menu">
+        <div class="brand">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust">
+                <div class="user-info-top text-dark mt-2 text-center">
+                    <h6 class="mb-0">Jessica J.</h6>
+                    <small class="text-muted">$8000.00 USD</small>
+
+
+                </div>
+
+            </a>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="discover.html"><i class="fab fa-bandcamp me-3"></i>Discover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="browse-contest.html"><i class="fas fa-trophy me-3"></i>Contests</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="find-jobs.html" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase me-3"></i>Jobs</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="top-freelancers.html" tabindex="-1" aria-disabled="true"><i class="fas fa-plus-square me-3"></i>Post Project</a>
+            </li>
+        </ul>
+
+        <div class="bottom-settings">
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
+            <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
+        </div>
+    </nav>
+
+    <label for="menu-switch" id="menu-toggle" class="nav-bars-dots">   <i class="fas fa-bars"></i></label>
+
 
     <nav class="navbar navbar-expand-lg bg-dark-blue py-4 px-3 border-bottom">
         <div class="container-fluid">
@@ -42,38 +84,244 @@
             <div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-bandcamp"></i>Discover</a>
+                        <a class="nav-link active" aria-current="page" href="discover.html"><i class="fab fa-bandcamp"></i>Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-trophy"></i>Contests</a>
+                        <a class="nav-link" href="browse-contest.html"><i class="fas fa-trophy"></i>Contests</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
+                        <a class="nav-link" href="find-jobs.html" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <a class="text-white mx-3" href=""><i class="fas fa-crown"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-search"></i></a>
-                    <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
-                    </a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-bell"></i></a>
+                    <a class="text-white mx-3" href="top-freelancers.html"><i class="fas fa-crown"></i></a>
 
-                    <button type="button" class="btn btn-primary btn-sm mx-3 create-new-button-plus"><i class="fas fa-plus m-0"></i></button>
+
+                    <div class="search-box">
+                        <label><input type="text" id="search-bar"><span class="search-icon"></span></label>
+                    </div>
+
+
+                    <div class="dropdown notification-dropdown">
+                        <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
+                        </a>
+
+
+
+
+
+                        <ul class="dropdown-menu shadow-cust notification-outer p-2 border-0" aria-labelledby="dropdownMenuLink">
+                            <div class="1">
+                                <div class="col-md-12 notification-title p-3 pb-0">
+                                    <h6>RECENT MESSAGES</h6>
+                                    <hr>
+                                </div>
+                                <div class="col-md-12 notification-wraper">
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="dropdown notification-dropdown">
+                        <a class="text-white mx-3 " href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bell"></i></a>
+
+
+
+                        <ul class="dropdown-menu shadow-cust notification-outer p-2 border-0" aria-labelledby="dropdownMenuLink">
+                            <div class="1">
+                                <div class="col-md-12 notification-title p-3 pb-0">
+                                    <h6>RECENT UPDATES</h6>
+                                    <hr>
+                                </div>
+                                <div class="col-md-12 notification-wraper">
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <a class="btn btn-primary btn-sm mx-3 create-new-button-plus" href="create-project-details.html" role="button"><i class="fas fa-plus m-0"></i></a>
+
                     <div class="user-info-top text-white ms-4 text-end">
                         <h6 class="mb-0">Jessica J.</h6>
                         <small class="text-muted">$8000.00 USD</small>
 
 
                     </div>
+
+
                     <div class="dropdown user-dropdown">
 
                         <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust ms-3 dropdown-toggle" alt="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="user-profile.html"><i class="fas fa-user"></i> View Profile</a></li>
+                            <li><a class="dropdown-item" href="upgrade-membership.html"><i class="fas fa-id-card"></i> Membership</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item">Balance : $8000 USD</a></li>
+                            <li><a class="dropdown-item" href="make-deposit.html"><i class="fas fa-money-check-alt"></i> Make a deposit</a></li>
+                            <li><a class="dropdown-item" href="withdraw-earning.html"><i class="fas fa-university"></i> Withdraw Earning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="get-support.html"><i class="fas fa-question-circle"></i> Support</a></li>
+                            <li><a class="dropdown-item text-danger" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                         </ul>
                     </div>
                     <div class="vertical-line-plus"></div>
@@ -83,7 +331,6 @@
         </div>
         </div>
     </nav>
-
 
 
     <div class="container-fluid description-cover bg-dark-blue ">
@@ -640,12 +887,12 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js "></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0 "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js "></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5 "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/js/shareon.min.js"></script>
     <script src="assets/js/markme.js"></script>
@@ -684,67 +931,6 @@
         }
     </script>
 
-    <!-- <script>
-        // vars
-        let result = document.querySelector('.result'),
-            img_result = document.querySelector('.img-result'),
-            img_w = document.querySelector('.img-w'),
-            img_h = document.querySelector('.img-h'),
-            options = document.querySelector('.options'),
-            save = document.querySelector('.save'),
-            cropped = document.querySelector('.cropped'),
-            dwn = document.querySelector('.download'),
-            upload = document.querySelector('#file-input'),
-            cropper = '';
-
-        // on change show image with crop options
-        upload.addEventListener('change', (e) => {
-            if (e.target.files.length) {
-                // start file reader
-                const reader = new FileReader();
-                reader.onload = (e) => {
-                    if (e.target.result) {
-                        // create new image
-                        let img = document.createElement('img');
-                        img.id = 'image';
-                        img.src = e.target.result
-                            // clean result before
-                        result.innerHTML = '';
-                        // append new image
-                        result.appendChild(img);
-                        // show save btn and options
-                        save.classList.remove('hide');
-                        options.classList.remove('hide');
-                        // init cropper
-                        cropper = new Cropper(img);
-                    }
-                };
-                reader.readAsDataURL(e.target.files[0]);
-            }
-        });
-
-        // save on click
-        save.addEventListener('click', (e) => {
-            e.preventDefault();
-            // get result to data uri
-            let imgSrc = cropper.getCroppedCanvas({
-                width: img_w.value // input value
-            }).toDataURL();
-            // remove hide class of img
-            cropped.classList.remove('hide');
-            img_result.classList.remove('hide');
-            // show image cropped
-            cropped.src = imgSrc;
-            dwn.classList.remove('hide');
-            dwn.download = 'imagename.png';
-            dwn.setAttribute('href', imgSrc);
-        });
-    </script> -->
-
-    <!-- <script>
-        const inputElement = document.querySelector('input[type="file"]');
-        const pond = FilePond.create(inputElement);
-    </script> -->
 
 </body>
 

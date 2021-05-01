@@ -12,6 +12,7 @@
     <link rel="manifest" href="manifest.json?h=28dd4702cfc5b1fa38461c757b9c947b">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=a436bee1e5ae414f98db7ca13adfd7c0">
@@ -27,6 +28,48 @@
 <body style="border-style: none;">
 
 
+    <input id="menu-switch" type="checkbox" hidden/>
+    <nav id="menu" role="navigation" class="shadow-cust push-menu">
+        <div class="brand">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust">
+                <div class="user-info-top text-dark mt-2 text-center">
+                    <h6 class="mb-0">Jessica J.</h6>
+                    <small class="text-muted">$8000.00 USD</small>
+
+
+                </div>
+
+            </a>
+        </div>
+        <ul>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="discover.html"><i class="fab fa-bandcamp me-3"></i>Discover</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="browse-contest.html"><i class="fas fa-trophy me-3"></i>Contests</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="find-jobs.html" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase me-3"></i>Jobs</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="top-freelancers.html" tabindex="-1" aria-disabled="true"><i class="fas fa-plus-square me-3"></i>Post Project</a>
+            </li>
+        </ul>
+
+        <div class="bottom-settings">
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/checkbox.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/calender-blank.svg"> </a>
+            <a href="#"><img class="news-feed-button" src="assets/img/svg/bookmark.svg"> </a>
+            <a href="#"><img src="assets/img/svg/setting-gear.svg"> </a>
+        </div>
+    </nav>
+
+    <label for="menu-switch" id="menu-toggle" class="nav-bars-dots">   <i class="fas fa-bars"></i></label>
+
+
     <nav class="navbar navbar-expand-lg bg-dark-blue py-4 px-3 border-bottom">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/img/svg/white-logo.svg"></a>
@@ -37,38 +80,244 @@
             <div class="collapse navbar-collapse mx-4" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="fab fa-bandcamp"></i>Discover</a>
+                        <a class="nav-link active" aria-current="page" href="discover.html"><i class="fab fa-bandcamp"></i>Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-trophy"></i>Contests</a>
+                        <a class="nav-link" href="browse-contest.html"><i class="fas fa-trophy"></i>Contests</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
+                        <a class="nav-link" href="find-jobs.html" tabindex="-1" aria-disabled="true"><i class="fas fa-briefcase"></i>Jobs</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                    <a class="text-white mx-3" href=""><i class="fas fa-crown"></i></a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-search"></i></a>
-                    <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
-                    </a>
-                    <a class="text-white mx-3" href=""><i class="fas fa-bell"></i></a>
+                    <a class="text-white mx-3" href="top-freelancers.html"><i class="fas fa-crown"></i></a>
 
-                    <button type="button" class="btn btn-primary btn-sm mx-3 create-new-button-plus"><i class="fas fa-plus m-0"></i></button>
+
+                    <div class="search-box">
+                        <label><input type="text" id="search-bar"><span class="search-icon"></span></label>
+                    </div>
+
+
+                    <div class="dropdown notification-dropdown">
+                        <a class="text-white mx-3 position-relative" href=""><i class="fas fa-comment"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge border border-primary rounded-circle bg-primary p-1"><span class="visually-hidden">unread messages</span></span>
+                        </a>
+
+
+
+
+
+                        <ul class="dropdown-menu shadow-cust notification-outer p-2 border-0" aria-labelledby="dropdownMenuLink">
+                            <div class="1">
+                                <div class="col-md-12 notification-title p-3 pb-0">
+                                    <h6>RECENT MESSAGES</h6>
+                                    <hr>
+                                </div>
+                                <div class="col-md-12 notification-wraper">
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="message-inner">
+                                        <div class="row">
+                                            <div class="col-md-1">
+                                                <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+
+                                            </div>
+                                            <div class="col-md-11">
+                                                <a href="#" class="text-dark">
+                                                    <h6 class="mx-4">Bettina J. @bettina2025</h6>
+
+                                                    <h6 class="mx-4">How are you? long day no see.</h6>
+                                                    <h6 class="mx-4 text-muted">1 min ago</h6>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="dropdown notification-dropdown">
+                        <a class="text-white mx-3 " href="" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-bell"></i></a>
+
+
+
+                        <ul class="dropdown-menu shadow-cust notification-outer p-2 border-0" aria-labelledby="dropdownMenuLink">
+                            <div class="1">
+                                <div class="col-md-12 notification-title p-3 pb-0">
+                                    <h6>RECENT UPDATES</h6>
+                                    <hr>
+                                </div>
+                                <div class="col-md-12 notification-wraper">
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="notification-inner">
+                                        <div class="d-flex">
+                                            <img src="assets/img/avatar.jpg" class="small-avatar-image rounded" alt="">
+                                            <h6 class="mx-4">Jessica J. Rated your entry <a href="#"><u>Design a Creative UI</u></a> <small class="text-muted">45 min ago.</small></h6>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                    <a class="btn btn-primary btn-sm mx-3 create-new-button-plus" href="create-project-details.html" role="button"><i class="fas fa-plus m-0"></i></a>
+
                     <div class="user-info-top text-white ms-4 text-end">
                         <h6 class="mb-0">Jessica J.</h6>
                         <small class="text-muted">$8000.00 USD</small>
 
 
                     </div>
+
+
                     <div class="dropdown user-dropdown">
 
                         <img src="assets/img/profile-avatar.png" class="small-avatar-image rounded shadow-cust ms-3 dropdown-toggle" alt="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="user-profile.html"><i class="fas fa-user"></i> View Profile</a></li>
+                            <li><a class="dropdown-item" href="upgrade-membership.html"><i class="fas fa-id-card"></i> Membership</a></li>
+                            <li><a class="dropdown-item" href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item">Balance : $8000 USD</a></li>
+                            <li><a class="dropdown-item" href="make-deposit.html"><i class="fas fa-money-check-alt"></i> Make a deposit</a></li>
+                            <li><a class="dropdown-item" href="withdraw-earning.html"><i class="fas fa-university"></i> Withdraw Earning</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="get-support.html"><i class="fas fa-question-circle"></i> Support</a></li>
+                            <li><a class="dropdown-item text-danger" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
                         </ul>
                     </div>
                     <div class="vertical-line-plus"></div>
@@ -114,7 +363,7 @@
                     <div class="contest-pricing-icon">
                         <button type="button" class="btn btn-light-cust text-muted me-2"><i class="far fa-bookmark"></i></button>
                         <button type="button" class="btn btn-light-cust text-muted me-2"><i class="far fa-check-square"></i></button>
-                        <button type="button" class="btn btn-primary px-4">Submit Work</button>
+                        <button type="button" class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#submit-entry">Submit Work</button>
 
                     </div>
                 </div>
@@ -249,17 +498,201 @@
         </div>
     </div>
 
+    <!-- Submit Entry Modal -->
+    <div class="modal fade entry-modal" id="submit-entry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="thumb-entry">
+                                <h5>Submit Your Entry</h5>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3">
+
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="mx-auto upload-work-file-area">
+                                <div class="upload-work-file-area1">
+
+                                    <h4>Darg file or upload a file</h4>
+                                    <p>PNG, GIF or JPG (RGB)</p>
+                                    <p>Maximum file size of 8mb</p>
+                                    <p>Minimum dimensions of 960px by 960px</p>
+                                    <p>Maximum dimensions of 2000px by 2000px</p>
+                                    <p>Check out how to use the cropping tool.</p>
+
+                                    <div class="upload-entry-button">
+                                        <button type="button" class="btn btn-primary pe-5 ps-5">Upload</button>
+                                    </div>
+                                    <!-- <div class="box-2">
+                                <div class="result"></div>
+                            </div> -->
 
 
 
+                                    <!-- <div class="box">
+                                <div class="options hide">
+
+                                    <input type="number" class="img-w" value="960" min="100" max="2000" / hidden>
+                                </div>
+
+                                <button class="btn btn-primary save hide">Crop</button>
+
+                            </div> -->
+                                </div>
 
 
+                            </div>
+
+                            <div class="uploaded-file">
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                File name 35364577.png
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger" id="b4"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                gskldngk3256457878.mov
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                didskfhg 934530496.jpg
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card border-0 mt-3 mb-3">
+                                    <div class="card-body bg-light">
+                                        <div class="d-flex justify-content-between">
+
+                                            <div class="file-name">
+                                                thdsfl.gif
+                                            </div>
+                                            <div class="file-size">
+                                                45.54 KB
+                                            </div>
+                                            <div class="file-trash">
+                                                <a href="#" class="pe-auto"> <i class="far fa-trash-alt text-danger"></i></a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-3 bg-white">
+                            <div class="entry-preview text-center">
+                                <h5>Preview</h5>
+                                <img src="https://via.placeholder.com/400x400.png">
+                                <!-- <div class="box-2 img-result hide">
+                           
+                            <img class="cropped img-fluid" src="" alt="">
+                        </div> -->
+                            </div>
+
+
+                            <div class="card mt-3 border-0">
+                                <div class="card-body p-0">
+                                    <div class="row">
+                                        <div class="col-md-12 float-start">
+                                            <div class="mb-5">
+                                                <label for="entry_description" class="form-label">Description</label>
+                                                <textarea class="form-control" id="entry_description" rows="3" placeholder="Ex. Discribe about this project .."></textarea>
+                                            </div>
+
+                                            <div class="contest-terms-area">
+                                                <h5>Requirements</h5>
+                                                <li>I agree to the code of conduct</li>
+                                                <li>I understand the Copyright issue.</li>
+                                                <div class="form-check mt-4">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                I understand and agree to the requirements
+                                            </label>
+                                                </div>
+                                                <div class="submit-action mt-4">
+                                                    <button type="button" class="btn btn-primary pe-5 ps-5">Upload</button>
+                                                    <button type="button" class="btn btn-outline-secondary">Cancel</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js "></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0 "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js "></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5 "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "></script>
+
     <script>
         var tooltipTriggerList = [].slice.call(
             document.querySelectorAll('[data-toggle="tooltip "]')

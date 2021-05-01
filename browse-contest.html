@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Login- Hatchio</title>
+    <title>Browse Contest- Hatchio</title>
     <meta name="description" content="Free themes for students, teachers, and public use in learning purpose. Made with Bootstrap 5.">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
     <link rel="icon" type="image/png" sizes="undefinedxundefined" href="assets/img/logo.png?h=3c553fe5b271aa3cbb9aa84caef3ff1c">
@@ -12,16 +12,19 @@
     <link rel="manifest" href="manifest.json?h=28dd4702cfc5b1fa38461c757b9c947b">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css?h=a436bee1e5ae414f98db7ca13adfd7c0">
     <link rel="stylesheet" href="assets/css/styles.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/typeface.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/custom.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
+    <link rel="stylesheet" href="assets/css/range-slider2.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="assets/css/responsive.css?h=b2e4a4acc5fac1c98b67994429b0bb1b">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+
 </head>
 
 <body style="border-style: none;">
@@ -370,7 +373,128 @@
                 <div class="col">
                     <div class="">
                         <div class="card card-body">
-                            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <h6>Select category</h6>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option selected disabled>All category (832)</option>
+                                          <option>Logo & identity (325)</option>
+                                          <option>Web & app design (405)</option>
+                                          <option>Business & advertising (87)</option>
+                                          <option>Clothing & merchandise (135)</option>
+                                          <option>Art & illustration (65)</option>
+                                          <option>Packaging & label (75)</option>
+                                          <option>Book & magazine (122)</option>
+                                          <option>Other (92)</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <h6>Search by keywords</h6>
+                                    <div class="input-group mb-3">
+
+                                        <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
+                                        <input type="text" class="form-control" placeholder="Search by keyword" aria-label="search" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <h6>Language</h6>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option selected disabled>All Language</option>
+                                          <option value="en" data-styled-select-option="" data-value="en" data-title="English">
+                                            English
+                                           </option>
+                                            <option value="es" data-styled-select-option="" data-value="es" data-title="Spanish">
+                                            Spanish
+                                            </option>
+                                            <option value="de" data-styled-select-option="" data-value="de" data-title="German">
+                                            German
+                                            </option>
+                                            <option value="fr" data-styled-select-option="" data-value="fr" data-title="French">
+                                            French
+                                            </option>
+                                            <option value="it" data-styled-select-option="" data-value="it" data-title="Italian">
+                                            Italian
+                                            </option>
+                                            <option value="nl" data-styled-select-option="" data-value="nl" data-title="Dutch">
+                                            Dutch
+                                            </option>
+                                            <option value="pt" data-styled-select-option="" data-value="pt" data-title="Portuguese">
+                                            Portuguese
+                                            </option>
+                                            <option value="ja" data-styled-select-option="" data-value="ja" data-title="Japanese">
+                                            Japanese
+                                            </option>
+                                                        </select>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-md-4">
+                                    <h6>Contest Type</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                        <label class="form-check-label" for="inlineCheckbox1">Featured</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                        <label class="form-check-label" for="inlineCheckbox2">Guaranteed</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                                        <label class="form-check-label" for="inlineCheckbox3">Urgent</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                                        <label class="form-check-label" for="inlineCheckbox4">Sealed</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                                        <label class="form-check-label" for="inlineCheckbox5">Top Contest</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
+                                        <label class="form-check-label" for="inlineCheckbox6">NDA</label>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="price-calculator">
+                                        <fieldset>
+                                            <div class="range-slider">
+                                                <h6 class="mb-4">Prize Money</h6>
+
+                                                <input name="range--seats" id="range--seats" class="range-slider__range" type="range" value="0" min="10" max="1000">
+
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <h6>Days left</h6>
+
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option selected="" disabled="">Days left</option>
+                                          <option>Less than 1 Day</option>
+                                          <option>1 to 2 days</option>
+                                          <option>2 to 3 days</option>
+                                          <option>More than 3 days</option>
+                                       
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -378,15 +502,11 @@
 
 
 
-            <div class="row ">
+            <div class="row">
                 <div class="col-md-12 ">
 
-
-
-
-
-
-                    <div class="card border-0 shadow-cust ">
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3 ">
                         <div class="card-body ">
 
                             <div class="row">
@@ -401,7 +521,9 @@
                                 </div>
 
                                 <div class="col-md-6">
-                                    <h4>Host a small business Website on IBM Cloud</h4>
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
                                     <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
                                     <span class="">
                                         <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
@@ -458,11 +580,647 @@
 
                         </div>
                     </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+                    <!-- Contest card start -->
+                    <div class="card border-0 shadow-cust mb-3">
+                        <div class="card-body ">
+
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="portfolio-container">
+                                        <img src="assets/img/portfolio1.jpg" class="portfolio-sample img-fluid" alt="">
+
+                                        <div class="portfolio-label">
+                                            <h5 class="m-3"><i class="fas fa-border-all me-2"></i>344 Entries</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <a href="contest-description.html">
+                                        <h4>Host a small business Website on IBM Cloud</h4>
+                                    </a>
+                                    <p class="text-muted">Be as creative as you want, the only rules is that try to create at least 2-4 pages, maybe news feed, contests page, messages page, and try to...</p>
+                                    <span class="">
+                    <img src="assets/img/ibm-logo.png" class="small-avatar-image rounded me-2" alt="">
+                    <h6 class="d-inline"><strong>by IBM C.</strong></h6>
+                </span>
+                                    <span class="rating-star ms-2">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i></span>
+
+                                    <span class="text-muted ms-2">
+                        1472 Reviews
+                    </span>
+
+                                    <div class="required-skill mt-3">
+
+                                        <span class="badge bg-secondary">HTML</span>
+                                        <span class="badge bg-secondary">GRAPHIC DESIGN</span>
+                                        <span class="badge bg-secondary">ILLUSTRATOR</span>
+                                        <span class="badge bg-secondary">USER EXPERIENCE</span>
+
+                                    </div>
+
+                                    <div class="contest-type mt-3">
+                                        <span class="badge bg-guaranteed py-2 px-3">GUARANTEED</span>
+                                        <span class="badge bg-featured py-2 px-3">FEATURED</span>
+                                        <span class="badge bg-urgent py-2 px-3">URGENT</span>
+                                        <span class="badge bg-pro py-2 px-3">PRO</span>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-md-2 ms-auto">
+                                    <h4 class="d-inline">$10000</h4><small class="text-muted mx-1">/USD</small>
+                                    <p class="text-muted mt-3"><i class="far fa-clock me-2"></i>17 Hours Left</p>
+                                    <p><i class="far fa-star text-muted me-2"></i>0% Rated</p>
+
+                                    <div class="mt-cust">
+                                        <button type="button" class="btn btn-light-cust me-3"><i class="far fa-bookmark"></i></button>
+                                        <button type="button" class="btn btn-light-cust"><i class="far fa-check-square"></i></button>
+
+                                    </div>
+
+                                    <div class="vertical-line-gray">
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Contest card end -->
+
+
                 </div>
 
-
-
             </div>
+
+            <!--            Pagination start-->
+            <div class="mt-4 mb-5">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--            Pagination end-->
+
         </div>
     </div>
 
@@ -471,13 +1229,13 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.bundle.min.js "></script>
     <script src="assets/js/smart-forms.min.js?h=a436bee1e5ae414f98db7ca13adfd7c0 "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js "></script>
     <script src="assets/js/script.min.js?h=107149a5a76976f881b165a9c43ae6c5 "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css "></script>
+    <script src="https://andreruffert.github.io/rangeslider.js/assets/rangeslider.js/dist/rangeslider.min.js"></script>
     <script>
         var tooltipTriggerList = [].slice.call(
             document.querySelectorAll('[data-toggle="tooltip "]')
@@ -485,6 +1243,31 @@
         var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl);
         });
+
+
+        /* Configure sliders
+        ----------------------------------------------------------------- */
+
+        var $element = $('input[type="range"]');
+        var $handle;
+
+        $('#totals').hide();
+
+        $element
+            .rangeslider({
+                polyfill: false,
+                onInit: function() {
+                    $handle = $('.rangeslider__handle', this.$range);
+                    updateHandle($handle[0], this.value);
+                }
+            })
+            .on('input', function() {
+                updateHandle($handle[0], this.value);
+            });
+
+        function updateHandle(el, val) {
+            el.textContent = val;
+        }
     </script>
 </body>
 
